@@ -5,9 +5,10 @@ enum THEME {
     light = "light"
 }
 
-export const useDarkMode = () => {
+export const useDarkMode = (): [boolean, () => void] => {
     const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem("theme") === THEME.dark); // If is not dark by default will be light
     const toggleDarkMode = () => {
+        console.log("im here righ")
         setIsDarkMode(!isDarkMode);
     };
 

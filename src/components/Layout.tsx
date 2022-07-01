@@ -1,3 +1,4 @@
+import React from "react";
 import Body from "./Body";
 import Navbar from "./Navbar";
 import AnimatedRoutes from "./AnimatedRoutes";
@@ -13,7 +14,7 @@ const Layout = () => {
             </div>
             <Navbar />
         </div>
-    )
+    );
 };
 
 export default Layout;

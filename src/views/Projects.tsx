@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "../components/Card";
 
-const AboutView = () => {
+const ProjectsView = () => {
     return (
         <Card>
-            hola
+            Projects
         </Card>
     );
 };
 
-export default AboutView;
+export default ProjectsView;

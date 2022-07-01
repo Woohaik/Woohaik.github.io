@@ -2,7 +2,7 @@
 module.exports = {
   darkMode: "class",
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
 
@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         dark: "#22272e"
       }
-    },
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};

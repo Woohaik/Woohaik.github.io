@@ -1,4 +1,5 @@
 import { FC } from "react"
+import { NavLink } from "react-router-dom";
 interface IProps {
     text?: string,
     icon: JSX.Element,
@@ -6,21 +7,25 @@ interface IProps {
 }
 const NavbarItem: FC<IProps> = (props: IProps) => {
     return (
-        <div className="flex navbar__item place-items-center p-2 rounded-md flex-col-reverse justify-center cursor-pointer" onClick={() => console.log(props.to)}>
-            {
-                props.text ?
+        <NavLink
+            to={props.to}
+        >
+            <div className="hover flex navbar__item place-items-center p-2 rounded-md flex-col-reverse justify-center cursor-pointer" onClick={() => console.log(props.to)}>
 
-                    <div className="text-lg">
-                        {props.text}
-                    </div> : null
-            }
+                {
+                    props.text ?
+                        <div className="text-lg">
+                            {props.text}
+                        </div> : null
+                }
 
-            <div>
                 {
                     props.icon
                 }
+
+
             </div>
-        </div>
+        </NavLink>
     )
 
 }

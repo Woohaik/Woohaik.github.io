@@ -1,5 +1,7 @@
 import React, { FC, ReactNode } from "react";
 import { NavLink } from "react-router-dom";
+// import { motion } from "framer-motion";
+// TODO: ver framer motion para animar algunos textos  https://dev.to/harshhhdev/create-a-satisfying-wavy-text-animation-with-framer-motion-3hb5 ref
 interface IProps {
     text?: string,
     icon: ReactNode,
@@ -13,9 +15,12 @@ const NavbarItem: FC<IProps> = (props: IProps) => {
             to={props.to}
         >
             <div className="hover flex navbar__item place-items-center p-2 rounded-md flex-col-reverse justify-center cursor-pointer" onClick={() => console.log(props.to)}>
+
                 {
                     props.text
-                        ? <div className="text-lg">
+                        ? <div
+
+                        >
                             {props.text}
                         </div>
                         : null

@@ -1,9 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
+import AppModal from "../components/Modal";
 
 const ContactView = () => {
     return (
         <Card>
+            <AppModal />
             Contact
         </Card>
     );

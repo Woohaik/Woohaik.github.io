@@ -1,3 +1,11 @@
+export const LANGUAGES = {
+    en: "en",
+    es: "es",
+    fr: "fr"
+};
+
+export type ILocals = keyof typeof LANGUAGES;
+
 export const posibleLocals = {
     role: "role",
     downloadCV: "downloadCV",
@@ -24,11 +32,12 @@ const eslocal: typeof posibleLocals = {
     contact: "Contacto",
     projects: "Proyectos"
 };
+
 const frlocal: typeof posibleLocals = {
     role: "Développeur Web",
     downloadCV: "Télécharger CV",
     about: "À propos de moi",
-    resume: "CV",
+    resume: "Résumé",
     contact: "Contact",
     projects: "Projects"
 };

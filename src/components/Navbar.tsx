@@ -11,7 +11,7 @@ const Navbar = () => {
     const [currentLocale, setCurrentLocale] = useLocales();
 
     return (
-        <div className="max-w-[1240px] mx-auto flex gap-8   justify-end">
+        <div className="max-w-[1240px] mx-auto flex gap-7  justify-end">
             <div className="navbar  rounded-md h-auto flex  z-10  justify-between  dark:bg-dark bg-white hover">
                 <select className="dark:bg-dark" value={currentLocale} onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
                     setCurrentLocale(event.target.value as ILocals);
@@ -21,7 +21,7 @@ const Navbar = () => {
                     <option value="fr">Français</option>
                 </select>
             </div>
-            <div className="navbar rounded-md h-auto flex gap-12 p-3  z-10  justify-between dark:bg-dark bg-white  max-w-[1240px] ">
+            <div className="navbar rounded-md h-auto flex gap-10 p-3  z-10  justify-between dark:bg-dark bg-white  max-w-[1240px] ">
                 <NavbarItem
                     to="/about"
                     icon={<FaUser className="w-5 h-5" />}

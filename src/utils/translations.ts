@@ -12,7 +12,10 @@ export const posibleLocals = {
     about: "about",
     resume: "resume",
     contact: "contact",
-    projects: "projects"
+    projects: "projects",
+    aboutMe: {
+        about: "<span className='text-red-700'> About</span> Me"
+    }
 };
 
 const enlocal: typeof posibleLocals = {
@@ -21,7 +24,11 @@ const enlocal: typeof posibleLocals = {
     about: "About me",
     resume: "Resume",
     contact: "Contact",
-    projects: "Projects"
+    projects: "Projects",
+    aboutMe: {
+        about: "<span class='text-primary'> About</span> Me"
+    }
+
 };
 
 const eslocal: typeof posibleLocals = {
@@ -30,7 +37,10 @@ const eslocal: typeof posibleLocals = {
     about: "Sobre mi",
     resume: "Curriculum",
     contact: "Contacto",
-    projects: "Proyectos"
+    projects: "Proyectos",
+    aboutMe: {
+        about: "<span class='text-primary'> Sobre</span> Mi"
+    }
 };
 
 const frlocal: typeof posibleLocals = {
@@ -39,7 +49,10 @@ const frlocal: typeof posibleLocals = {
     about: "À propos de moi",
     resume: "Résumé",
     contact: "Contact",
-    projects: "Projects"
+    projects: "Projects",
+    aboutMe: {
+        about: "<span class='text-primary dark:text-lightText'> À propos de</span> Moi"
+    }
 };
 
 export {

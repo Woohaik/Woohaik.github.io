@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../components/Card";
+import Card from "../components/Card/Card";
 import AppModal from "../components/Modal";
 
 const ContactView = () => {

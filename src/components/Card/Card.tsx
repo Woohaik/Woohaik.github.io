@@ -25,8 +25,10 @@ const Card: FC<IProps> = ({
                 }
             }
             transition={{ type: "spring", bounce: 0.05 }}
-            className="card  absolute rounded-tr-md rounded-br-md p-4 pl-7 dark:bg-dark bg-white h-[100%] w-[100%]" >
+            className="card flex flex-col absolute rounded-tr-md rounded-br-md py-8 px-8  dark:bg-dark bg-white h-[100%] w-[100%]" >
+
             {
+
                 children
             }
         </motion.div >

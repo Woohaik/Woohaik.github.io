@@ -5,41 +5,13 @@ import CardBody from "../components/Card/CardBody";
 import CardTitle from "../components/Card/CardTitle";
 
 const AboutView = () => {
-    const { t } = useTranslation("translation", { keyPrefix: "aboutMe" });
+    const { t } = useTranslation("translation", { keyPrefix: "aboutView" });
     return (
         <Card>
-            <CardTitle html={t("about")} />
+            <CardTitle html={t("title")} />
             <CardBody>
                 <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    pariatur sit ex cum rerum commodi voluptatem expedita similique iusto recusandae
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    recusandae                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    recusandae
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    recusandae
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    recusandae
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    recusandae
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    pariatur sit ex cum rerum commodi voluptatem expedita similique iusto recusandae
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    recusandae
-
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    recusandae
-                    fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
+                    et consectetur adipisicing elit. Id maxime vero
                     recusandae
                     fuga optio, adipisci officia deserunt! Necessitatibus, molestiae officia?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero

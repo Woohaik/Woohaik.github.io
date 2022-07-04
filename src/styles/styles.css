@@ -91,7 +91,6 @@
     z-index: -1;
     content: "";
     transition: all 0.5s;
-    background-color: #5d75df;
     width: 0%;
     height: 0%;
     top: 50%;
@@ -99,7 +98,7 @@
 }
 
 .dark .navbar__item::after {
-    background-color: #505b67;
+    background-color: #4c535b;
 }
 
 .active .navbar__item::after {
@@ -112,9 +111,28 @@
 
 .active .navbar__item {
     cursor: default;
-    color: aliceblue;
+    color: white;
 }
 
 .ReactModal__Overlay {
     z-index: 10;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(144, 157, 171, 0.4);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #5d75df;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background-color: #a5b0bb;
 }

@@ -14,7 +14,7 @@ const NavbarItem: FC<IProps> = (props: IProps) => {
             className="navlink"
             to={props.to}
         >
-            <div className="hover flex navbar__item place-items-center p-2 rounded-md flex-col-reverse justify-center cursor-pointer" onClick={() => console.log(props.to)}>
+            <div className="hover flex navbar__item place-items-center p-2 rounded-md flex-col-reverse after:bg-primary justify-center cursor-pointer" onClick={() => console.log(props.to)}>
 
                 {
                     props.text

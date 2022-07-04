@@ -6,7 +6,7 @@ interface IProps {
 
 const CardBody: FC<IProps> = (props) => {
     return (
-        <div className="card__body py-5 text-justify flex-1">
+        <div className="card__body  mt-5 px-4 text-justify flex-1">
             {
                 props.children
             }

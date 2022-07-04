@@ -6,6 +6,16 @@ export const LANGUAGES = {
 
 export type ILocals = keyof typeof LANGUAGES;
 
+export const PROJECTS_CATEGORIES = ["All", "Frontend", "Vscode", "npm"] as const;
+export type PROJECTS_CATEGORIES_TYPES = typeof PROJECTS_CATEGORIES[number];
+
+export interface IProject {
+    categories: PROJECTS_CATEGORIES_TYPES[]
+    technologies: string[],
+    title: string,
+    description: string
+}
+
 export const posibleLocals = {
     role: "role",
     downloadCV: "downloadCV",
@@ -13,8 +23,24 @@ export const posibleLocals = {
     resume: "resume",
     contact: "contact",
     projects: "projects",
-    aboutMe: {
-        about: "<span className='text-red-700'> About</span> Me"
+    aboutView: {
+        title: "title"
+    },
+    projectsView: {
+        title: "title",
+        projectCategories: {
+            All: "All",
+            Frontend: "Frontend",
+            Vscode: "Vscode",
+            npm: "npm"
+        },
+        projects: [] as IProject[]
+    },
+    contactView: {
+        title: "title"
+    },
+    resumeView: {
+        title: "title"
     }
 };
 
@@ -25,10 +51,50 @@ const enlocal: typeof posibleLocals = {
     resume: "Resume",
     contact: "Contact",
     projects: "Projects",
-    aboutMe: {
-        about: "<span class='text-primary'> About</span> Me"
+    aboutView: {
+        title: "<span class='text-primary dark:text-lightText'> About</span> Me"
+    },
+    contactView: {
+        title: "<span class='text-primary dark:text-lightText'> Contact</span> Me"
+    },
+    projectsView: {
+        title: "<span class='text-primary dark:text-lightText'> My</span> Projects",
+        projectCategories: {
+            All: "All",
+            Frontend: "Frontend",
+            Vscode: "Vscode",
+            npm: "npm"
+        },
+        projects: [
+            {
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "supra chat francais OOOOOMG",
+                description: "hay bro"
+            },
+            {
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "supra asdsdfsdf chat francais OOOOOMG",
+                description: "hayxd  bro"
+            },
+            {
+                categories: ["npm"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "tbin-tree",
+                description: "Aca va el tbin bro"
+            },
+            {
+                categories: ["Frontend", "Vscode"],
+                technologies: ["Vuejs", "mangote", "SCSS"],
+                title: "La revolucion industrial fue xd",
+                description: "hay bro"
+            }
+        ]
+    },
+    resumeView: {
+        title: "<span class='text-primary dark:text-lightText'> My</span> Experience"
     }
-
 };
 
 const eslocal: typeof posibleLocals = {
@@ -38,8 +104,49 @@ const eslocal: typeof posibleLocals = {
     resume: "Curriculum",
     contact: "Contacto",
     projects: "Proyectos",
-    aboutMe: {
-        about: "<span class='text-primary'> Sobre</span> Mi"
+    aboutView: {
+        title: "<span class='text-primary dark:text-lightText'> Sobre</span> Mi"
+    },
+    contactView: {
+        title: "<span class='text-primary dark:text-lightText'> Contacta</span> Conmigo"
+    },
+    projectsView: {
+        title: "<span class='text-primary dark:text-lightText'> Mis</span> Proyectos",
+        projectCategories: {
+            All: "Todas",
+            Frontend: "Frontend",
+            Vscode: "Vscode",
+            npm: "npm"
+        },
+        projects: [
+            {
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "supra chat francais OOOOOMG",
+                description: "hay bro"
+            },
+            {
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "supra asdsdfsdf chat francais OOOOOMG",
+                description: "hayxd  bro"
+            },
+            {
+                categories: ["npm"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "tbin-tree",
+                description: "Aca va el tbin bro"
+            },
+            {
+                categories: ["Frontend", "Vscode"],
+                technologies: ["Vuejs", "mangote", "SCSS"],
+                title: "La revolucion industrial fue xd",
+                description: "hay bro"
+            }
+        ]
+    },
+    resumeView: {
+        title: "<span class='text-primary dark:text-lightText'> Mi</span> Experiencia"
     }
 };
 
@@ -49,9 +156,50 @@ const frlocal: typeof posibleLocals = {
     about: "À propos de moi",
     resume: "Résumé",
     contact: "Contact",
-    projects: "Projects",
-    aboutMe: {
-        about: "<span class='text-primary dark:text-lightText'> À propos de</span> Moi"
+    projects: "Projets",
+    aboutView: {
+        title: "<span class='text-primary dark:text-lightText'> À propos de</span> Moi"
+    },
+    contactView: {
+        title: "<span class='text-primary dark:text-lightText'> Contact avec</span> Moi"
+    },
+    projectsView: {
+        title: "<span class='text-primary dark:text-lightText'> Mes</span> Projets",
+        projectCategories: {
+            All: "Toutes",
+            Frontend: "Frontend",
+            Vscode: "Vscode",
+            npm: "npm"
+        },
+        projects: [
+            {
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "supra chat francais OOOOOMG",
+                description: "hay bro"
+            },
+            {
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "supra asdsdfsdf chat francais OOOOOMG",
+                description: "hayxd  bro"
+            },
+            {
+                categories: ["npm"],
+                technologies: ["Vuejs", "Typescript", "SCSS"],
+                title: "tbin-tree",
+                description: "Aca va el tbin bro"
+            },
+            {
+                categories: ["Frontend", "Vscode"],
+                technologies: ["Vuejs", "mangote", "SCSS"],
+                title: "La revolucion industrial fue xd",
+                description: "hay bro"
+            }
+        ]
+    },
+    resumeView: {
+        title: "<span class='text-primary dark:text-lightText'> Mon</span> Expérience"
     }
 };
 

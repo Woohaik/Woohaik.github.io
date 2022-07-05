@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import AnimatedGrid from "../components/AnimatedGrid";
 import Card from "../components/Card/Card";
 import CardBody from "../components/Card/CardBody";
 import CardTitle from "../components/Card/CardTitle";
@@ -15,7 +16,7 @@ const ProjectsView = () => {
     return (
         <Card>
             <CardTitle html={t(posibleLocals.aboutView.title)} >
-                <div className="flex gap-4 font-normal ">
+                <div className="flex gap-4 font-normal">
                     {
                         PROJECTS_CATEGORIES.map(
                             projectCat =>
@@ -25,7 +26,8 @@ const ProjectsView = () => {
                                             ? "text-primary text-primary dark:text-primary-dark"
                                             : "text-gray-500 dark:text-gray-500"}`
                                     }
-                                    onClick={() => setSelectedCategory(projectCat)} key={projectCat}>
+                                    onClick={() => setSelectedCategory(projectCat)} key={projectCat}
+                                >
                                     {categoriesT(projectCat)}
                                 </div>
                         )
@@ -35,14 +37,21 @@ const ProjectsView = () => {
             <CardBody>
                 Mostrando categoria: {selectedCategory}
                 <br />
-                <div className="grid-cols-3 grid gap-5">
+                <div className="bg-red-500 w-[50 px]">
+                    xd
+                </div>
+                <AnimatedGrid
+                    gap={15}
+                    columns={3}
+                    itemHeight={200}
+                >
                     {
-
                         (t("projects", { returnObjects: true }) as IProject[])
                             .filter(project => selectedCategory === "All" || project.categories.some(category => category === selectedCategory))
                             .map(project => <Project key={project.title} project={project} />)
                     }
-                </div>
+                </AnimatedGrid>
+
             </CardBody>
         </Card>
     );

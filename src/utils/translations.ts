@@ -69,13 +69,13 @@ const enlocal: typeof posibleLocals = {
             {
                 categories: ["Frontend"],
                 technologies: ["Vuejs", "Typescript", "SCSS"],
-                title: "supra chat francais OOOOOMG",
+                title: "supra chat francais",
                 description: "hay bro"
             },
             {
                 categories: ["Frontend"],
                 technologies: ["Vuejs", "Typescript", "SCSS"],
-                title: "supra asdsdfsdf chat francais OOOOOMG",
+                title: "supra asdsdfsdf chat francais",
                 description: "hayxd  bro"
             },
             {
@@ -87,7 +87,7 @@ const enlocal: typeof posibleLocals = {
             {
                 categories: ["Frontend", "Vscode"],
                 technologies: ["Vuejs", "mangote", "SCSS"],
-                title: "La revolucion industrial fue xd",
+                title: "La revolucion industrial omg b",
                 description: "hay bro"
             }
         ]
@@ -175,13 +175,13 @@ const frlocal: typeof posibleLocals = {
             {
                 categories: ["Frontend"],
                 technologies: ["Vuejs", "Typescript", "SCSS"],
-                title: "supra chat francais OOOOOMG",
+                title: "supra chat francais ",
                 description: "hay bro"
             },
             {
                 categories: ["Frontend"],
                 technologies: ["Vuejs", "Typescript", "SCSS"],
-                title: "supra asdsdfsdf chat francais OOOOOMG",
+                title: "supra asdsdfsdf chat francais ",
                 description: "hayxd  bro"
             },
             {

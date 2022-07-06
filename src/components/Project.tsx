@@ -1,4 +1,3 @@
-import { motion, AnimatePresence } from "framer-motion";
 import React, { FC } from "react";
 import { IProject } from "../utils/translations";
 
@@ -8,34 +7,18 @@ interface IProps {
 
 const Project: FC<IProps> = ({ project }) => {
     return (
-        <AnimatePresence>
-            <motion.div
+        <div className="project-card relative after:absolute after:w-[100%] after:h-[100%] after:cursor-pointer">
+            <div className="w-[100%] h-[180px]">
+                <img className="w-[100%] h-[180px] object-cover" src="https://via.placeholder.com/300x150.png" alt="project preview" />
+            </div>
+            <div className="px-2 pt-2 text-[18px] text-center font-medium">
 
-                exit={{
-                    opacity: 0,
-                    transform: "scale(0)"
-                }}
-                initial={{
-                    opacity: 0,
-                    transform: "scale(0)"
-                }}
-                animate={
-                    {
-                        opacity: 1,
-                        transform: "scale(1)"
-                    }
-                }
-                className="w-auto bg-red-400 transition-all">
                 {project.title}
-                <br />
-                <img src="https://via.placeholder.com/300x150.png" alt="project preview" />
-                {project.description}
-                <br />
-                <div className="flex gap-2">
-                    {project.technologies.map(tech => <div key={`${project.title}-${tech}`}>{tech}</div>)}
-                </div>
-            </motion.div>
-        </AnimatePresence>
+            </div>
+            <div className="flex gap-2 pb-2 justify-center text-[13px]">
+                {project.technologies.map(tech => <div key={`${project.title}-${tech}`}>{tech}</div>)}
+            </div>
+        </div>
     );
 };
 

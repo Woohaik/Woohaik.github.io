@@ -35,19 +35,15 @@ const ProjectsView = () => {
                 </div>
             </CardTitle>
             <CardBody>
-                Mostrando categoria: {selectedCategory}
-                <br />
-                <div className="bg-red-500 w-[50 px]">
-                    xd
-                </div>
                 <AnimatedGrid
+                    conditionToShow={(t("projects", { returnObjects: true }) as IProject[]).map(project => selectedCategory === "All" || project.categories.some(category => category === selectedCategory))}
                     gap={15}
-                    columns={3}
-                    itemHeight={200}
+                    animationDuration={0.5}
+                    columns={2}
+                    itemHeight={242}
                 >
                     {
                         (t("projects", { returnObjects: true }) as IProject[])
-                            .filter(project => selectedCategory === "All" || project.categories.some(category => category === selectedCategory))
                             .map(project => <Project key={project.title} project={project} />)
                     }
                 </AnimatedGrid>

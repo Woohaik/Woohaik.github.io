@@ -38,7 +38,7 @@ const ProjectsView = () => {
                 <AnimatedGrid
                     conditionToShow={(t("projects", { returnObjects: true }) as IProject[]).map(project => selectedCategory === "All" || project.categories.some(category => category === selectedCategory))}
                     gap={15}
-                    animationDuration={0.5}
+                    animationDuration={0.4}
                     columns={2}
                     itemHeight={242}
                 >

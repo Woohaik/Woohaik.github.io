@@ -1,29 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@keyframes bg-flow {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    100% {
-        background-position: 100% 100%;
-    }
-}
+@import "./keyframes";
+@import "./override";
 
 #app {
     background: rgb(16, 98, 165);
     animation: bg-flow 5s infinite alternate;
     background-image: linear-gradient(45deg, #1e8c7e, #64b3d9, #208ea2, #498ada, #5b73df, #897ed3, #8172e0);
     background-size: 1100% 1100%;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .dark #app {
     background-image: linear-gradient(45deg, #505b67, #3a434c, #353d47, #2b3138);
 }
-
 
 .image-clip-path {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 33%, 100% 90%, 50% 100%, 0 90%, 0 50%);
@@ -55,13 +46,6 @@
     overflow-y: auto;
 }
 
-.navbar {
-    box-shadow: 8px 7px 3px 2px rgba(0, 0, 0, 0.1);
-}
-
-.dark .navbar__item:hover {
-    background-color: rgba(144, 157, 171, 0.12);
-}
 
 .hover {
     transition: all 0.15s;
@@ -78,6 +62,15 @@
 .card-area {
     top: 25px;
 }
+
+.navbar {
+    box-shadow: 8px 7px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dark .navbar__item:hover {
+    background-color: rgba(144, 157, 171, 0.12);
+}
+
 
 .navbar__item {
     position: relative;
@@ -114,10 +107,6 @@
     color: white;
 }
 
-.ReactModal__Overlay {
-    z-index: 10;
-}
-
 .project-card::after {
     content: "";
     transition: all 1s;
@@ -138,8 +127,6 @@
 .project-card:hover::after {
     opacity: 0.4;
 }
-
-
 
 /* Scroll */
 ::-webkit-scrollbar {

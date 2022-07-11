@@ -16,6 +16,23 @@ export interface IProject {
     description: string
 }
 
+interface IWorkPlace {
+    logoUrl: string,
+    name: string
+}
+
+export interface IExperiencePeriod {
+    role: string,
+    period: [Date, Date],
+    technologies: string[],
+    description: string,
+}
+
+export interface IExperience {
+    place: IWorkPlace,
+    roles: IExperiencePeriod[]
+}
+
 export const posibleLocals = {
     role: "role",
     downloadCV: "downloadCV",
@@ -24,7 +41,8 @@ export const posibleLocals = {
     contact: "contact",
     projects: "projects",
     aboutView: {
-        title: "title"
+        title: "title",
+        description: "description"
     },
     projectsView: {
         title: "title",
@@ -40,7 +58,8 @@ export const posibleLocals = {
         title: "title"
     },
     resumeView: {
-        title: "title"
+        title: "title",
+        places: [] as IExperience[]
     }
 };
 
@@ -52,7 +71,23 @@ const enlocal: typeof posibleLocals = {
     contact: "Contact",
     projects: "Projects",
     aboutView: {
-        title: "<span class='text-primary dark:text-lightText'> About</span> Me"
+        title: "<span class='text-primary dark:text-lightText'> About</span> Me",
+        description:
+            `
+                Apasionado de las nuevas tecnologías
+                con experiencia construyendo
+                aplicación web full-stack, diseñando
+                arquitecturas cloud, microservicios,
+                trabajo con contenedores y tecnologias
+                serverless. Experiencia trabajando con
+                metodologías SCRUM y KANBAN.
+                Autonomía, trabajo en equipo y
+                adaptación al cambio, en busca de
+                nuevos retos, resolución de problemas,
+                aprendizaje y mejora continua, especial
+                interés enfocado a incremento de
+                conocimientos y habilidades cloud.
+        `
     },
     contactView: {
         title: "<span class='text-primary dark:text-lightText'> Contact</span> Me"
@@ -93,7 +128,19 @@ const enlocal: typeof posibleLocals = {
         ]
     },
     resumeView: {
-        title: "<span class='text-primary dark:text-lightText'> My</span> Experience"
+        title: "<span class='text-primary dark:text-lightText'> My</span> Experience",
+        places: [{
+            place: {
+                name: "La tronca de la mangonera",
+                logoUrl: "https://via.placeholder.com/20x200.png"
+            },
+            roles: [{
+                description: "Aca estuvo como perro trabajando",
+                period: [new Date(), new Date()],
+                role: "Maquetador Web",
+                technologies: ["El taipescrí", "SCSS", "AWS", "Tulas"]
+            }]
+        }]
     }
 };
 
@@ -105,7 +152,23 @@ const eslocal: typeof posibleLocals = {
     contact: "Contacto",
     projects: "Proyectos",
     aboutView: {
-        title: "<span class='text-primary dark:text-lightText'> Sobre</span> Mi"
+        title: "<span class='text-primary dark:text-lightText'> Sobre</span> Mi",
+        description:
+            `
+            Apasionado de las nuevas tecnologías
+            con experiencia construyendo
+            aplicación web full-stack, diseñando
+            arquitecturas cloud, microservicios,
+            trabajo con contenedores y tecnologias
+            serverless. Experiencia trabajando con
+            metodologías SCRUM y KANBAN.
+            Autonomía, trabajo en equipo y
+            adaptación al cambio, en busca de
+            nuevos retos, resolución de problemas,
+            aprendizaje y mejora continua, especial
+            interés enfocado a incremento de
+            conocimientos y habilidades cloud.
+    `
     },
     contactView: {
         title: "<span class='text-primary dark:text-lightText'> Contacta</span> Conmigo"
@@ -146,7 +209,19 @@ const eslocal: typeof posibleLocals = {
         ]
     },
     resumeView: {
-        title: "<span class='text-primary dark:text-lightText'> Mi</span> Experiencia"
+        title: "<span class='text-primary dark:text-lightText'> Mi</span> Experiencia",
+        places: [{
+            place: {
+                name: "La tronca de la mangonera",
+                logoUrl: "https://via.placeholder.com/20x200.png"
+            },
+            roles: [{
+                description: "Aca estuvo como perro trabajando",
+                period: [new Date(), new Date()],
+                role: "Maquetador Web",
+                technologies: ["El taipescrí", "SCSS", "AWS", "Tulas"]
+            }]
+        }]
     }
 };
 
@@ -158,7 +233,23 @@ const frlocal: typeof posibleLocals = {
     contact: "Contact",
     projects: "Projets",
     aboutView: {
-        title: "<span class='text-primary dark:text-lightText'> À propos de</span> Moi"
+        title: "<span class='text-primary dark:text-lightText'> À propos de</span> Moi",
+        description:
+            `
+            Apasionado de las nuevas tecnologías
+            con experiencia construyendo
+            aplicación web full-stack, diseñando
+            arquitecturas cloud, microservicios,
+            trabajo con contenedores y tecnologias
+            serverless. Experiencia trabajando con
+            metodologías SCRUM y KANBAN.
+            Autonomía, trabajo en equipo y
+            adaptación al cambio, en busca de
+            nuevos retos, resolución de problemas,
+            aprendizaje y mejora continua, especial
+            interés enfocado a incremento de
+            conocimientos y habilidades cloud.
+        `
     },
     contactView: {
         title: "<span class='text-primary dark:text-lightText'> Contact avec</span> Moi"
@@ -199,7 +290,19 @@ const frlocal: typeof posibleLocals = {
         ]
     },
     resumeView: {
-        title: "<span class='text-primary dark:text-lightText'> Mon</span> Expérience"
+        title: "<span class='text-primary dark:text-lightText'> Mon</span> Expérience",
+        places: [{
+            place: {
+                name: "La tronca de la mangonera",
+                logoUrl: "https://via.placeholder.com/20x200.png"
+            },
+            roles: [{
+                description: "Aca estuvo como perro trabajando",
+                period: [new Date(), new Date()],
+                role: "Maquetador Web",
+                technologies: ["El taipescrí", "SCSS", "AWS", "Tulas"]
+            }]
+        }]
     }
 };
 

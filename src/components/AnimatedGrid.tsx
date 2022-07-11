@@ -35,10 +35,9 @@ const AnimatedGrid: FC<IProps> = (props) => {
             {
                 props.children.map((Children, index) =>
                     <div className="absolute animatedxd" key={index} style={{
-                        border: "red 1px solid",
                         transition: `all ${props.animationDuration}s`,
                         width: stringCalcElementSize,
-
+                        overflow: "hidden",
                         height: props.itemHeight,
                         ...getSymbolicIndex(index)
                     }}>

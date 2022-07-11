@@ -1,0 +1,15 @@
+.ReactModal__Overlay {
+    z-index: 10;
+    background-color: rgba(40, 40, 40, 0.8) !important;
+}
+
+.ReactModal__Overlay .ReactModal__Content {
+    background-color: white !important;
+    animation: modal_animation 0.4s;
+
+}
+
+.dark .ReactModal__Overlay .ReactModal__Content {
+    background-color: #22272e !important;
+    color: white !important;
+}

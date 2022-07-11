@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { IExperience } from "../utils/translations";
+import { IExperience } from "../utils/types";
 
 interface IProps {
     experience: IExperience
@@ -25,11 +25,10 @@ const Experience: FC<IProps> = (props) => {
                             <div className="experience__timeline__item__title relative text-[16px] font-medium">
                                 {role.role}
                             </div>
-                            <div className="text-[13px] mt-1">
-                                {
-                                    role.description
-                                }
+                            <div className="text-[12px] mt-1  dark:text-primary-dark">
+                                18 sep 2021 - 18 sep 2022 (1 año 9 meses)
                             </div>
+                            <div className="text-[13px] mt-1" dangerouslySetInnerHTML={{ __html: role.description }} />
                             <div className="text-[12px] font-medium text-primary mt-1 dark:text-primary-dark">
                                 <span className="text-dark dark:text-white">
                                     Tecnologias:&nbsp;

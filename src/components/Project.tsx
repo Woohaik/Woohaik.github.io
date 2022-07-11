@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { IProject } from "../utils/translations";
+import { IProject } from "../utils/types";
 import Modal from "./Modal";
 import ModalBody from "./ModalBody";
 

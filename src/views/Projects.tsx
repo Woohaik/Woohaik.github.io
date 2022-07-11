@@ -5,7 +5,8 @@ import Card from "../components/Card/Card";
 import CardBody from "../components/Card/CardBody";
 import CardTitle from "../components/Card/CardTitle";
 import Project from "../components/Project";
-import { IProject, posibleLocals, PROJECTS_CATEGORIES, PROJECTS_CATEGORIES_TYPES } from "../utils/translations";
+import { POSIBLE_LOCALS, PROJECTS_CATEGORIES } from "../utils/constants";
+import { IProject, PROJECTS_CATEGORIES_TYPES } from "../utils/types";
 
 const ProjectsView = () => {
     const { t } = useTranslation("translation", { keyPrefix: "projectsView" });
@@ -15,7 +16,7 @@ const ProjectsView = () => {
 
     return (
         <Card>
-            <CardTitle html={t(posibleLocals.aboutView.title)} >
+            <CardTitle html={t(POSIBLE_LOCALS.aboutView.title)} >
                 <div className="flex gap-4 font-normal">
                     {
                         PROJECTS_CATEGORIES.map(

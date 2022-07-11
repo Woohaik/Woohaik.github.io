@@ -1,10 +1,15 @@
 import { IPosibleLocals } from "../utils/types";
 
 export const frlocal: IPosibleLocals = {
+    locale: "fr-FR",
     role: "Développeur Web",
     downloadCV: "Télécharger CV",
     about: "À propos de moi",
     resume: "Résumé",
+    month: "mois",
+    year: "année",
+    months: "mois",
+    years: "années",
     contact: "Contact",
     projects: "Projets",
     aboutView: {
@@ -94,7 +99,7 @@ export const frlocal: IPosibleLocals = {
                                     </li>
                                 </ul>
                             `,
-                        period: [new Date("December 1, 2019"), new Date()], // from december to nowadays
+                        period: ["December 1, 2019", "now"], // from december to nowadays
                         role: "Développeur Web",
                         technologies: ["Reactjs", "Typescript", "Vuejs", "AWS", "Nuxt", "Docker", "GCP"]
                     },
@@ -109,7 +114,7 @@ export const frlocal: IPosibleLocals = {
                                     </li>
                                 </ul>
                             `,
-                        period: [new Date("September 1, 2018"), new Date("November 30, 2019")], // from december to nowadays
+                        period: ["September 1, 2018", "November 30, 2019"],
                         role: "Créateur de site web",
                         technologies: ["HTML", "CSS", "SCSS", "Javascript"]
                     }

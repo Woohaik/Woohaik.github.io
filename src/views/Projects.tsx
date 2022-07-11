@@ -24,7 +24,7 @@ const ProjectsView = () => {
                                 <div
                                     className={
                                         `cursor-pointer hover:${projectCat === selectedCategory
-                                            ? "text-primary text-primary dark:text-primary-dark"
+                                            ? "text-primary  dark:text-primary-dark font-medium " + "text-primary"
                                             : "text-gray-500 dark:text-gray-500"}`
                                     }
                                     onClick={() => setSelectedCategory(projectCat)} key={projectCat}

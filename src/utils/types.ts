@@ -20,7 +20,7 @@ export interface IWorkPlace {
 
 export interface IExperiencePeriod {
     role: string,
-    period: [Date, Date],
+    period: [string, (string)],
     technologies: string[],
     description: string,
 }

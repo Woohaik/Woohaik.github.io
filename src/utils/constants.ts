@@ -9,9 +9,14 @@ export const LANGUAGES = {
 export const PROJECTS_CATEGORIES = ["All", "Frontend", "Vscode", "npm"] as const;
 
 export const POSIBLE_LOCALS = {
+    locale: "locale",
     role: "role",
     downloadCV: "downloadCV",
     about: "about",
+    year: "year",
+    years: "years",
+    month: "month",
+    months: "months",
     resume: "resume",
     contact: "contact",
     projects: "projects",

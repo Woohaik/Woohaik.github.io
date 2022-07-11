@@ -1,10 +1,15 @@
 import { IPosibleLocals } from "../utils/types";
 
 export const enlocal: IPosibleLocals = {
+    locale: "en-US",
     role: "Web Developer",
     downloadCV: "Download Resume",
     about: "About me",
     resume: "Resume",
+    month: "month",
+    year: "year",
+    months: "months",
+    years: "years",
     contact: "Contact",
     projects: "Projects",
     aboutView: {
@@ -93,7 +98,7 @@ export const enlocal: IPosibleLocals = {
                                     Contenerización de aplicación y entornos de desarrollo con Docker y Docker Compose
                                 </li>
                             </ul>`,
-                        period: [new Date("December 1, 2019"), new Date()], // from december to nowadays
+                        period: ["December 1, 2019", "now"], // from december to nowadays
                         role: "Web Developer",
                         technologies: ["Reactjs", "Typescript", "Vuejs", "AWS", "Nuxt", "Docker", "GCP"]
                     },
@@ -108,7 +113,7 @@ export const enlocal: IPosibleLocals = {
                                 </li>
                             </ul>
                         `,
-                        period: [new Date("September 1, 2018"), new Date("November 30, 2019")], // from december to nowadays
+                        period: ["September 1, 2018", "November 30, 2019"],
                         role: "Web Builder",
                         technologies: ["HTML", "CSS", "SCSS", "Javascript"]
                     }

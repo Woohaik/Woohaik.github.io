@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./variables";
 @import "./keyframes";
 @import "./override";
+@import "./components";
 
 #app {
     background: rgb(16, 98, 165);
@@ -140,7 +142,7 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: #5d75df;
+    background-color: $primary;
 }
 
 .dark ::-webkit-scrollbar-thumb {

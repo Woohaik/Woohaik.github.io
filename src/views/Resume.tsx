@@ -14,13 +14,10 @@ const ResumeView = () => {
             <CardTitle html={t("title")} />
             <CardBody>
                 <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime vero
-                    <div>
-                        {
-                            (t("places", { returnObjects: true }) as IExperience[])
-                                .map(experience => <Experience key={experience.place.name} experience={experience} />)
-                        }
-                    </div>
+                    {
+                        (t("places", { returnObjects: true }) as IExperience[])
+                            .map(experience => <Experience key={experience.place.name} experience={experience} />)
+                    }
                 </div>
             </CardBody>
         </Card>

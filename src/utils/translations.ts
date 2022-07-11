@@ -129,18 +129,36 @@ const enlocal: typeof posibleLocals = {
     },
     resumeView: {
         title: "<span class='text-primary dark:text-lightText'> My</span> Experience",
-        places: [{
-            place: {
-                name: "La tronca de la mangonera",
-                logoUrl: "https://via.placeholder.com/20x200.png"
-            },
-            roles: [{
-                description: "Aca estuvo como perro trabajando",
-                period: [new Date(), new Date()],
-                role: "Maquetador Web",
-                technologies: ["El taipescrí", "SCSS", "AWS", "Tulas"]
-            }]
-        }]
+        places: [
+            {
+                place: {
+                    name: "EUROPEAN UNIVERSITY OF THE ATLANTIC",
+                    logoUrl: "logo_uneatlantico.svg"
+                },
+                roles: [
+                    {
+                        description: `
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aliquam dolore velit obcaecati amet 
+                    maxime? Ad est maiores quam at, cum hic, soluta expedita neque aut possimus nam consequuntur beatae!
+
+                    `,
+                        period: [new Date(), new Date()],
+                        role: "Maquetador Web",
+                        technologies: ["El taipescrí", "SCSS", "AWS", "Tulas"]
+                    },
+                    {
+                        description: `
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aliquam dolore velit obcaecati amet 
+                    maxime? Ad est maiores quam at, cum hic, soluta expedita neque aut possimus nam consequuntur beatae!
+
+                    `,
+                        period: [new Date(), new Date()],
+                        role: "Maquetador Web",
+                        technologies: ["El taipescrí", "SCSS", "AWS", "Tulas"]
+                    }
+                ]
+            }
+        ]
     }
 };
 
@@ -213,7 +231,7 @@ const eslocal: typeof posibleLocals = {
         places: [{
             place: {
                 name: "La tronca de la mangonera",
-                logoUrl: "https://via.placeholder.com/20x200.png"
+                logoUrl: "logo_uneatlantico.svg"
             },
             roles: [{
                 description: "Aca estuvo como perro trabajando",
@@ -294,7 +312,7 @@ const frlocal: typeof posibleLocals = {
         places: [{
             place: {
                 name: "La tronca de la mangonera",
-                logoUrl: "https://via.placeholder.com/20x200.png"
+                logoUrl: "logo_uneatlantico.svg"
             },
             roles: [{
                 description: "Aca estuvo como perro trabajando",

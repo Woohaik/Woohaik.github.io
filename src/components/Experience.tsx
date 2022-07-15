@@ -3,6 +3,7 @@ import { IExperience } from "../utils/types";
 import Datedif from "date-diff";
 import { useTranslation } from "react-i18next";
 import { POSIBLE_LOCALS } from "../utils/constants";
+import { capitalizeText } from "../utils/functions";
 
 interface IProps {
     experience: IExperience
@@ -12,8 +13,7 @@ const Experience: FC<IProps> = (props) => {
     const { t } = useTranslation();
     const toLocaleDateString = (date: Date) => {
         const traducedDate = date.toLocaleDateString(t(POSIBLE_LOCALS.locale), { year: "numeric", month: "long" });
-        const [firstLetter, ...rest] = traducedDate.split("");
-        return [firstLetter.toUpperCase(), ...rest].join("");
+        return capitalizeText(traducedDate);
     };
 
     const calcTimeDiference = (...dates: [string, string]) => {
@@ -55,7 +55,7 @@ const Experience: FC<IProps> = (props) => {
                                     calcTimeDiference(...role.period)
                                 }
                             </div>
-                            <div className="text-[13px] mt-1" dangerouslySetInnerHTML={{ __html: role.description }} />
+                            <div className="text-[14px] mt-1" dangerouslySetInnerHTML={{ __html: role.description }} />
                             <div className="text-[12px] font-medium text-primary mt-1 dark:text-primary-dark">
                                 <span className="text-dark dark:text-white">
                                     Tecnologias:&nbsp;

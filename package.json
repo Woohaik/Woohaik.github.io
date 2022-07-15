@@ -10,6 +10,7 @@
     "@types/node": "^16.11.42",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
+    "country-flag-icons": "^1.5.5",
     "date-diff": "^1.0.2",
     "formik": "^2.2.9",
     "framer-motion": "^6.3.16",
@@ -51,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@types/country-flag-icons": "^1.2.0",
     "@types/react-modal": "^3.13.1",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",

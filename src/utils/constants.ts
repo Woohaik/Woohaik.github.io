@@ -22,7 +22,24 @@ export const POSIBLE_LOCALS = {
     projects: "projects",
     aboutView: {
         title: "title",
-        description: "description"
+        description: "description",
+        aboutAnswers: {
+            degree: "degree",
+            residence: "residence",
+            nationality: "nationality",
+            movility: "movility",
+            coffee: "coffee"
+        },
+        university: "university",
+        age: "age",
+        degree: "degree",
+        nationality: "nationality",
+        residence: "residence",
+        movility: "movility",
+        coffee: "coffee",
+        certificationSubTitle: "certificationSubTitle",
+        educationSubTitle: "educationSubTitle",
+        languagesSubTitle: "languagesSubTitle"
     },
     projectsView: {
         title: "title",

@@ -5,7 +5,7 @@ interface IProps {
     gap?: number,
     animationDuration: number;
     itemHeight: number;
-    conditionToShow: boolean[],
+    conditionToShow?: boolean[],
     children?: React.ReactNode[];
 }
 
@@ -18,16 +18,17 @@ const AnimatedGrid: FC<IProps> = (props) => {
     const stringCalcElementSize = `calc(${elementSize}% - ${(gap / props.columns) * (props.columns - 1)}px)`;
 
     const getSymbolicIndex = (realIndex: number) => {
-        const arrayUntilHere = props.conditionToShow.slice(0, realIndex + 1);
+        const auxShowCondition = props.conditionToShow ? props.conditionToShow : props.children ? props.children.map(() => true) : [true];
+        const arrayUntilHere = auxShowCondition.slice(0, realIndex + 1);
         const countTrues = arrayUntilHere.filter(el => el).length - 1; // how many trues are over here OMG.
         const indexToSymbol = countTrues;
         const top = (Math.floor((indexToSymbol) / props.columns) * props.itemHeight) + gap * Math.floor((indexToSymbol) / props.columns);
         const left = `calc(calc(${stringCalcElementSize}*${(indexToSymbol % props.columns)} ) + ${gap * (indexToSymbol % props.columns)}px)`;
         return {
-            opacity: props.conditionToShow[realIndex] ? 1 : 0,
-            top: props.conditionToShow[realIndex] ? top : 0,
-            left: props.conditionToShow[realIndex] ? left : 0,
-            transform: `scale(${props.conditionToShow[realIndex] ? 1 : 0})`
+            opacity: auxShowCondition[realIndex] ? 1 : 0,
+            top: auxShowCondition[realIndex] ? top : 0,
+            left: auxShowCondition[realIndex] ? left : 0,
+            transform: `scale(${auxShowCondition[realIndex] ? 1 : 0})`
         };
     };
     return (

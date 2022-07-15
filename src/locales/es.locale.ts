@@ -16,20 +16,42 @@ export const eslocal: IPosibleLocals = {
         title: "<span class='text-primary dark:text-lightText'> Sobre</span> Mi",
         description:
             `
-            Apasionado de las nuevas tecnologías
-            con experiencia construyendo
-            aplicación web full-stack, diseñando
-            arquitecturas cloud, microservicios,
-            trabajo con contenedores y tecnologias
-            serverless. Experiencia trabajando con
-            metodologías SCRUM y KANBAN.
-            Autonomía, trabajo en equipo y
-            adaptación al cambio, en busca de
-            nuevos retos, resolución de problemas,
-            aprendizaje y mejora continua, especial
-            interés enfocado a incremento de
-            conocimientos y habilidades cloud.
-    `
+            <p>
+                Apasionado de las nuevas tecnologías
+                con experiencia construyendo
+                aplicación web full-stack, diseñando
+                arquitecturas cloud, microservicios,
+                trabajo con contenedores y tecnologias
+                serverless. Experiencia trabajando con
+                metodologías SCRUM y KANBAN.
+            </p>
+            <br/>
+            <p>
+                Autonomía, trabajo en equipo y
+                adaptación al cambio, en busca de
+                nuevos retos, resolución de problemas,
+                aprendizaje y mejora continua, especial
+                interés enfocado a incremento de
+                conocimientos y habilidades cloud.
+            </p>
+        `,
+        aboutAnswers: {
+            degree: "Ing. Informática",
+            residence: "Santander, España",
+            nationality: "Salvadoreño",
+            movility: "Disponible",
+            coffee: "Si"
+        },
+        university: "UNIVERSIDAD EUROPEA DEL ATLÁNTICO",
+        age: "Edad",
+        degree: "Titulación",
+        nationality: "Nacionalidad",
+        residence: "Residencia",
+        movility: "Movilidad",
+        coffee: "Café",
+        certificationSubTitle: "Certificaciones",
+        educationSubTitle: "Educación",
+        languagesSubTitle: "Idiomas"
     },
     contactView: {
         title: "<span class='text-primary dark:text-lightText'> Contacta</span> Conmigo"

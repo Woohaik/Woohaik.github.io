@@ -13,8 +13,8 @@ const Navbar = () => {
 
     return (
         <div className="max-w-[1240px] mx-auto flex gap-7  justify-end">
-            <div className="navbar  rounded-md h-auto flex  z-10  justify-between  dark:bg-dark bg-white hover">
-                <select className="dark:bg-dark" value={currentLocale} onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+            <div className="navbar   rounded-md h-auto flex  z-10  justify-between  dark:bg-dark bg-white hover">
+                <select className="dark:bg-dark rounded-md" value={currentLocale} onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
                     setCurrentLocale(event.target.value as ILocals);
                 }}>
                     <option value="es">Español</option>

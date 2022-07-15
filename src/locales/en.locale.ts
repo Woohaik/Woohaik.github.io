@@ -16,6 +16,7 @@ export const enlocal: IPosibleLocals = {
         title: "<span class='text-primary dark:text-lightText'> About</span> Me",
         description:
             `
+            <p>
                 Apasionado de las nuevas tecnologías
                 con experiencia construyendo
                 aplicación web full-stack, diseñando
@@ -23,13 +24,34 @@ export const enlocal: IPosibleLocals = {
                 trabajo con contenedores y tecnologias
                 serverless. Experiencia trabajando con
                 metodologías SCRUM y KANBAN.
+            <p/>
+            <br/>
+            <p>
                 Autonomía, trabajo en equipo y
                 adaptación al cambio, en busca de
                 nuevos retos, resolución de problemas,
                 aprendizaje y mejora continua, especial
                 interés enfocado a incremento de
                 conocimientos y habilidades cloud.
-        `
+            <p/>
+        `,
+        aboutAnswers: {
+            degree: "Computer Engineering",
+            residence: "Santander, Spain",
+            nationality: "Salvadorian",
+            movility: "Available ",
+            coffee: "Yes"
+        },
+        age: "Age",
+        university: "EUROPEAN UNIVERSITY OF THE ATLANTIC",
+        degree: "Degree",
+        nationality: "Nationality",
+        residence: "Residence",
+        movility: "Movility",
+        coffee: "Coffee",
+        certificationSubTitle: "Certifications",
+        educationSubTitle: "Education",
+        languagesSubTitle: "Languages"
     },
     contactView: {
         title: "<span class='text-primary dark:text-lightText'> Contact</span> Me"
@@ -74,7 +96,7 @@ export const enlocal: IPosibleLocals = {
         places: [
             {
                 place: {
-                    name: "UNIVERSIDAD EUROPEA DEL ATLÁNTICO",
+                    name: "EUROPEAN UNIVERSITY OF THE ATLANTIC",
                     logoUrl: "logo_uneatlantico.svg"
                 },
                 roles: [

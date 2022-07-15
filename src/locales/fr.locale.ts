@@ -16,20 +16,42 @@ export const frlocal: IPosibleLocals = {
         title: "<span class='text-primary dark:text-lightText'> À propos de</span> Moi",
         description:
             `
-            Apasionado de las nuevas tecnologías
-            con experiencia construyendo
-            aplicación web full-stack, diseñando
-            arquitecturas cloud, microservicios,
-            trabajo con contenedores y tecnologias
-            serverless. Experiencia trabajando con
-            metodologías SCRUM y KANBAN.
-            Autonomía, trabajo en equipo y
-            adaptación al cambio, en busca de
-            nuevos retos, resolución de problemas,
-            aprendizaje y mejora continua, especial
-            interés enfocado a incremento de
-            conocimientos y habilidades cloud.
-        `
+            <p>
+                Apasionado de las nuevas tecnologías
+                con experiencia construyendo
+                aplicación web full-stack, diseñando
+                arquitecturas cloud, microservicios,
+                trabajo con contenedores y tecnologias
+                serverless. Experiencia trabajando con
+                metodologías SCRUM y KANBAN.
+            <p>
+            <br/>
+            </p>
+                Autonomía, trabajo en equipo y
+                adaptación al cambio, en busca de
+                nuevos retos, resolución de problemas,
+                aprendizaje y mejora continua, especial
+                interés enfocado a incremento de
+                conocimientos y habilidades cloud.
+            </p>
+        `,
+        aboutAnswers: {
+            degree: "Ing. informatique",
+            residence: "Santander, Espagne",
+            nationality: "Salvadorien",
+            movility: "Disponible",
+            coffee: "Oui"
+        },
+        age: "Âge",
+        university: "UNIVERSITÉ EUROPÉENNE DE L'ATLANTIQUE",
+        degree: "Diplôme",
+        nationality: "Nationalité",
+        residence: "Résidence",
+        movility: "Mobilité",
+        coffee: "Café",
+        certificationSubTitle: "Certifications",
+        educationSubTitle: "Éducation",
+        languagesSubTitle: "Langues"
     },
     contactView: {
         title: "<span class='text-primary dark:text-lightText'> Contact avec</span> Moi"
@@ -74,7 +96,7 @@ export const frlocal: IPosibleLocals = {
         places: [
             {
                 place: {
-                    name: "UNIVERSIDAD EUROPEA DEL ATLÁNTICO",
+                    name: "UNIVERSITÉ EUROPÉENNE DE L'ATLANTIQUE",
                     logoUrl: "logo_uneatlantico.svg"
                 },
                 roles: [

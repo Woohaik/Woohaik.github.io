@@ -44,10 +44,19 @@
     background-color: rgba(144, 157, 171, 0.4);
 }
 
+.card__title--sub::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    width: 100vw;
+    height: 1px;
+    background-color: rgba(144, 157, 171, 0.4);
+}
+
 .card__body {
     overflow-y: auto;
 }
-
 
 .hover {
     transition: all 0.15s;
@@ -109,6 +118,8 @@
     color: white;
 }
 
+
+
 .project-card::after {
     content: "";
     transition: all 1s;
@@ -128,6 +139,16 @@
 
 .project-card:hover::after {
     opacity: 0.4;
+}
+
+
+.certification-card {
+    @extend .project-card;
+    &:hover {
+        img {
+            transform: scale(1.02);
+        }
+    }
 }
 
 /* Scroll */

@@ -7,6 +7,7 @@ import { POSIBLE_LOCALS } from "../utils/constants";
 
 const Body = () => {
     const { t } = useTranslation();
+
     return (
         <div className="profile dark:bg-dark z-10 bg-white navbar rounded-md">
             <div className="h-[420px] w-[420px] rounded-md">

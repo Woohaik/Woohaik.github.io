@@ -7,6 +7,7 @@ import BGParticles from "./Particles";
 const Layout = () => {
     return (
         <div className="max-w-[1175px]">
+
             <BGParticles />
             <div className="w-[1175px] mx-auto flex my-auto ">
                 <Body />

@@ -8,6 +8,9 @@ export const LANGUAGES = {
 
 export const PROJECTS_CATEGORIES = ["All", "Frontend", "Vscode", "npm"] as const;
 
+export const MY_EMAIL = "wilfredo.hernandez.ar@gmail.com";
+export const MY_PHONE_NUMBER = "+34 656 374 207";
+
 export const POSIBLE_LOCALS = {
     locale: "locale",
     role: "role",
@@ -18,7 +21,6 @@ export const POSIBLE_LOCALS = {
     month: "month",
     months: "months",
     resume: "resume",
-    contact: "contact",
     projects: "projects",
     aboutView: {
         title: "title",
@@ -36,6 +38,8 @@ export const POSIBLE_LOCALS = {
         nationality: "nationality",
         residence: "residence",
         movility: "movility",
+        contact: "contact",
+        phone: "phone",
         coffee: "coffee",
         certificationSubTitle: "certificationSubTitle",
         educationSubTitle: "educationSubTitle",
@@ -51,11 +55,32 @@ export const POSIBLE_LOCALS = {
         },
         projects: [] as IProject[]
     },
-    contactView: {
-        title: "title"
-    },
     resumeView: {
         title: "title",
         places: [] as IExperience[]
     }
 };
+
+export const MY_CERTIFICATIONS = [
+    {
+        imageUrl: "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+        title: "AWS Solutions Architect Associate",
+        link: "https://www.credly.com/badges/477fc37d-73d2-4384-9ede-f3770ef2e4ac/public_url"
+    },
+    {
+        imageUrl: "https://images.credly.com/size/340x340/images/f0d3fbb9-bfa7-4017-9989-7bde8eaf42b1/image.png",
+        title: "AWS SysOps Administrator Associate",
+        link: "https://www.credly.com/badges/5bedfbed-8052-405c-94e8-a862cefaabe9?source=linked_in_profile"
+    },
+    {
+        imageUrl: "https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png",
+
+        title: "AWS Developer Associate",
+        link: "https://www.credly.com/badges/54aafad6-2a9f-41ee-8551-dda1128044d6?source=linked_in_profile"
+    },
+    {
+        imageUrl: "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+        title: "AWS Cloud Practitioner",
+        link: "https://www.credly.com/badges/894de035-d6c4-43c7-a531-23be48732b27/public_url"
+    }
+];

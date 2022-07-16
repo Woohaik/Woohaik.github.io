@@ -4,7 +4,6 @@ import AboutView from "../views/About";
 import ResumeView from "../views/Resume";
 import { AnimatePresence } from "framer-motion";
 import ProjectsView from "../views/Projects";
-import ContactView from "../views/Contact";
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -14,7 +13,6 @@ const AnimatedRoutes = () => {
                 <Route path="/about" element={<AboutView />} />
                 <Route path="/resume" element={<ResumeView />} />
                 <Route path="/projects" element={<ProjectsView />} />
-                <Route path="/contact" element={<ContactView />} />
                 <Route
                     path="*"
                     element={<Navigate to="/about" replace />}

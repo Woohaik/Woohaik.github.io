@@ -10,9 +10,9 @@ export const eslocal: IPosibleLocals = {
     year: "año",
     months: "meses",
     years: "años",
-    contact: "Contacto",
     projects: "Proyectos",
     aboutView: {
+        contact: "Contacto",
         title: "<span class='text-primary dark:text-lightText'> Sobre</span> Mi",
         description:
             `
@@ -50,11 +50,9 @@ export const eslocal: IPosibleLocals = {
         movility: "Movilidad",
         coffee: "Café",
         certificationSubTitle: "Certificaciones",
+        phone: "Móvil",
         educationSubTitle: "Educación",
         languagesSubTitle: "Idiomas"
-    },
-    contactView: {
-        title: "<span class='text-primary dark:text-lightText'> Contacta</span> Conmigo"
     },
     projectsView: {
         title: "<span class='text-primary dark:text-lightText'> Mis</span> Proyectos",

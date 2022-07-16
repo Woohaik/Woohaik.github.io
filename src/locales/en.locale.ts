@@ -10,9 +10,10 @@ export const enlocal: IPosibleLocals = {
     year: "year",
     months: "months",
     years: "years",
-    contact: "Contact",
+
     projects: "Projects",
     aboutView: {
+        contact: "Contact",
         title: "<span class='text-primary dark:text-lightText'> About</span> Me",
         description:
             `
@@ -49,12 +50,10 @@ export const enlocal: IPosibleLocals = {
         residence: "Residence",
         movility: "Movility",
         coffee: "Coffee",
+        phone: "Phone",
         certificationSubTitle: "Certifications",
         educationSubTitle: "Education",
         languagesSubTitle: "Languages"
-    },
-    contactView: {
-        title: "<span class='text-primary dark:text-lightText'> Contact</span> Me"
     },
     projectsView: {
         title: "<span class='text-primary dark:text-lightText'> My</span> Projects",

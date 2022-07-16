@@ -62,18 +62,3 @@
         }
     }
 }
-
-.language-select {
-    position: relative;
-    border: 2px solid rgba(144, 157, 171, 0.4);
-
-    &::after {
-        position: absolute;
-        left: -25px;
-        top: -50%;
-        content: "";
-        background-color: rgba(144, 157, 171, 0.4);
-        width: 5px;
-        height: 200%;
-    }
-}

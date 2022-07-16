@@ -1,0 +1,25 @@
+.certification-card {
+    $parent-selector: &;
+    @extend .background-color-hover;
+
+    &__img {
+        z-index: 10;
+    }
+
+    &__text {
+        transition: all 0.5s;
+        z-index: -1;
+    }
+
+    &:hover {
+        #{$parent-selector}__img {
+            transform: scale(1.2) translateY(25%);
+        }
+
+        #{$parent-selector}__text {
+            transform: scale(0.1) translateY(50px);
+            opacity: 0;
+
+        }
+    }
+}

@@ -1,9 +1,9 @@
 import React from "react";
-import me from "./../assets/me.webp";
+import me from "./../../assets/me.webp";
 import { FaGithub, FaStackOverflow, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { POSIBLE_LOCALS } from "../utils/constants";
+import { POSIBLE_LOCALS } from "../../utils/constants";
 
 const Body = () => {
     const { t } = useTranslation();
@@ -21,13 +21,13 @@ const Body = () => {
                     }
                 </div>
                 <div className="flex gap-[10px] py-3 mb-5 mx-auto w-fit">
-                    <a href="https://github.com/Woohaik" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/Woohaik" className="bigger-on-hover" target="_blank" rel="noreferrer">
                         <FaGithub />
                     </a>
-                    <a href="https://stackoverflow.com/users/17200950/woohaik" target="_blank" rel="noreferrer">
+                    <a href="https://stackoverflow.com/users/17200950/woohaik" className="bigger-on-hover" target="_blank" rel="noreferrer">
                         <FaStackOverflow />
                     </a>
-                    <a href="https://www.linkedin.com/in/wilfredo-hndz" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/wilfredo-hndz" className="bigger-on-hover" target="_blank" rel="noreferrer">
                         <FaLinkedinIn />
                     </a>
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Body from "./Body";
+import Body from "./Card/Body";
 import Navbar from "./Navbar";
 import AnimatedRoutes from "./AnimatedRoutes";
 import BGParticles from "./Particles";

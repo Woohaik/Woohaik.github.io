@@ -64,7 +64,7 @@ const AboutView = () => {
                     </div>
                 </div>
                 <CardSubTitle icon={<FaCertificate />} html={t(POSIBLE_LOCALS.aboutView.certificationSubTitle)} />
-                <div className="grid grid-cols-4 gap-3 ">
+                <div className="grid grid-cols-4 gap-3  ">
                     {
                         MY_CERTIFICATIONS.map(cert => <CertificationCard key={cert.title} {...cert} />)
                     }
@@ -98,7 +98,7 @@ const AboutView = () => {
 
                 </div>
                 <CardSubTitle icon={<FaAddressBook />} html={t(POSIBLE_LOCALS.aboutView.contact)} />
-                <div className="flex">
+                <div className="flex gap-6">
                     <div className="flex-1">
                         <ColorSquare
                             title={"Email"}
@@ -111,10 +111,15 @@ const AboutView = () => {
                             <a href={`tel:${MY_PHONE_NUMBER.replaceAll(" ", "")}`}>{MY_PHONE_NUMBER}</a>
                         </ColorSquare>
                     </div>
-                    <div style={{ flex: "0 1 300px" }}>
-                        <div className="bg-white rounded-[35%] w-fit">
-                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="logo linkedin" />
-                        </div>
+                    <div className="flex-1 text-center">
+                        <a href="https://www.linkedin.com/in/wilfredo-hndz/" className="hover-bigger-img" target="_blank" rel="noreferrer">
+                            <div className="bg-white rounded-[38%] w-fit mx-auto">
+                                <img className="h-auto w-[75px] rounded-md" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="logo linkedin" />
+                            </div>
+                            <div className="font-medium mt-2">
+                                Conecta Conmigo
+                            </div>
+                        </a>
                     </div>
                 </div>
             </CardBody>

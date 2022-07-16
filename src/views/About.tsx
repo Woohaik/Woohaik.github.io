@@ -117,7 +117,7 @@ const AboutView = () => {
                                 <img className="h-auto w-[75px] rounded-md" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="logo linkedin" />
                             </div>
                             <div className="font-medium mt-2">
-                                Conecta Conmigo
+                                {t(POSIBLE_LOCALS.aboutView.conect)}
                             </div>
                         </a>
                     </div>

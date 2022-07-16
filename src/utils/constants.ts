@@ -17,6 +17,7 @@ export const POSIBLE_LOCALS = {
     downloadCV: "downloadCV",
     about: "about",
     year: "year",
+    techs: "techs",
     years: "years",
     month: "month",
     months: "months",
@@ -25,6 +26,7 @@ export const POSIBLE_LOCALS = {
     aboutView: {
         title: "title",
         description: "description",
+        conect: "conect",
         aboutAnswers: {
             degree: "degree",
             residence: "residence",

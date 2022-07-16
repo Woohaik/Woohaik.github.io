@@ -7,33 +7,30 @@ export const enlocal: IPosibleLocals = {
     about: "About me",
     resume: "Resume",
     month: "month",
+    techs: "Technologies",
     year: "year",
     months: "months",
     years: "years",
 
     projects: "Projects",
     aboutView: {
+        conect: "Conect With Me",
         contact: "Contact",
         title: "<span class='text-primary dark:text-lightText'> About</span> Me",
         description:
             `
             <p>
-                Apasionado de las nuevas tecnologías
-                con experiencia construyendo
-                aplicación web full-stack, diseñando
-                arquitecturas cloud, microservicios,
-                trabajo con contenedores y tecnologias
-                serverless. Experiencia trabajando con
-                metodologías SCRUM y KANBAN.
+                Passionate about new technologies with experience
+                building full-stack web applications, designing
+                cloud architectures, microservices, working with
+                containers and serverless technologies.
+                Experience working with SCRUM and KANBAN methodologies.
             <p/>
             <br/>
             <p>
-                Autonomía, trabajo en equipo y
-                adaptación al cambio, en busca de
-                nuevos retos, resolución de problemas,
-                aprendizaje y mejora continua, especial
-                interés enfocado a incremento de
-                conocimientos y habilidades cloud.
+                Autonomy, teamwork and adaptation to change,
+                looking for new challenges,  learning and continuous improvement, 
+                special interest focused on increasing cloud skills and knowledge.
             <p/>
         `,
         aboutAnswers: {
@@ -104,19 +101,19 @@ export const enlocal: IPosibleLocals = {
                             `
                             <ul>
                                 <li>
-                                    Análisis y Desarrollo de componentes web y SPA en reactjs y vuejs.
+                                    Analysis and development of web components and SPA.
                                 </li>
                                 <li>
-                                    Análisis, Diseño y desarrollo de APIs REST con Node.js
+                                    Analysis, Design and development of REST APIs with Node.js.
                                 </li>
                                 <li>
-                                    Diseño de arquitectura de proyectos web y microservicios cloud native.
+                                    Architecture design for web projects and cloud native microservices.
                                 </li>
                                 <li>
-                                    Automatización de tareas.
+                                    Application containerization and development environments with Docker and Docker Compose
                                 </li>
                                 <li>
-                                    Contenerización de aplicación y entornos de desarrollo con Docker y Docker Compose
+                                    Task automation.
                                 </li>
                             </ul>`,
                         period: ["December 1, 2019", "now"], // from december to nowadays
@@ -128,9 +125,8 @@ export const enlocal: IPosibleLocals = {
                             `
                             <ul>
                                 <li>
-                                    Maquetación de elementos y paginas Web a
-                                    partir de prototipos, aplicación de estilos
-                                    responsivos e interactividad.
+                                    Built components and web pages from prototypes,
+                                    application of responsive styles and interactivity.
                                 </li>
                             </ul>
                         `,

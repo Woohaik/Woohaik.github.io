@@ -6,33 +6,32 @@ export const frlocal: IPosibleLocals = {
     downloadCV: "Télécharger CV",
     about: "À propos de moi",
     resume: "Résumé",
+    techs: "Technologies",
     month: "mois",
     year: "année",
     months: "mois",
     years: "années",
     projects: "Projets",
     aboutView: {
+        conect: "Connectez",
         contact: "Contact",
         title: "<span class='text-primary dark:text-lightText'> À propos de</span> Moi",
         description:
             `
             <p>
-                Apasionado de las nuevas tecnologías
-                con experiencia construyendo
-                aplicación web full-stack, diseñando
-                arquitecturas cloud, microservicios,
-                trabajo con contenedores y tecnologias
-                serverless. Experiencia trabajando con
-                metodologías SCRUM y KANBAN.
+                Passionné par les nouvelles technologies, expérience
+                dans la construction d'applications web full-stack,
+                conception d'architectures cloud, microservices,
+                travail avec des conteneurs et des technologies serverless.
+                Expérience de travail avec les méthodologies SCRUM et KANBAN.
             <p>
             <br/>
             </p>
-                Autonomía, trabajo en equipo y
-                adaptación al cambio, en busca de
-                nuevos retos, resolución de problemas,
-                aprendizaje y mejora continua, especial
-                interés enfocado a incremento de
-                conocimientos y habilidades cloud.
+                Autonomie, travail en équipe et adaptation au changement,
+                recherche de nouveaux défis, résolution de problèmes,
+                apprentissage et amélioration continue, intérêt particulier
+                porté à l'accroissement des connaissances et des compétences
+                en matière de cloud.
             </p>
         `,
         aboutAnswers: {
@@ -103,19 +102,19 @@ export const frlocal: IPosibleLocals = {
                             `
                                 <ul>
                                     <li>
-                                        Análisis y Desarrollo de componentes web y SPA en reactjs y vuejs.
+                                        Analyse et développement de composants web et SPA en reactjs et vuejs.
                                     </li>
                                     <li>
-                                        Análisis, Diseño y desarrollo de APIs REST con Node.js
+                                        Analyse, conception et développement d'APIs REST avec Node.js
                                     </li>
                                     <li>
-                                        Diseño de arquitectura de proyectos web y microservicios cloud native.
+                                        Conception de l'architecture de projets web et de microservices natifs du cloud.
                                     </li>
                                     <li>
-                                        Automatización de tareas.
+                                        Automatisation des tâches.
                                     </li>
                                     <li>
-                                        Contenerización de aplicación y entornos de desarrollo con Docker y Docker Compose
+                                        Conteneurisation des applications et environnements de développement avec Docker et Docker Compose.
                                     </li>
                                 </ul>
                             `,
@@ -128,9 +127,9 @@ export const frlocal: IPosibleLocals = {
                             `
                                 <ul>
                                     <li>
-                                        Maquetación de elementos y paginas Web a
-                                        partir de prototipos, aplicación de estilos
-                                        responsivos e interactividad.
+                                        Création d'éléments et de pages Web à partir de prototypes,
+                                        application de styles à partir de prototypes, application de styles
+                                        réactifs et l'interactivité.
                                     </li>
                                 </ul>
                             `,

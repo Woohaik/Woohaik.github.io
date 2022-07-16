@@ -10,7 +10,7 @@ const LanguageLevel: FC<IProps> = (props) => {
     const maxLevel = 9;
     const levelArr = Array.from(Array(maxLevel).keys());
     return (
-        <div className="language-level flex gap-3">
+        <div className="language-level flex gap-3" style={{ perspective: "600px" }}>
             {
                 <props.flag height={18} />
             }
@@ -21,7 +21,7 @@ const LanguageLevel: FC<IProps> = (props) => {
                         className={
                             `
                             w-[18px] h-[18px] rounded-full language-level__stair
-                            ${(index + 1) > props.level ? "bg-gray-400 dark:bg-bg-dark" : "bg-primary dark:bg-gray-300"}  
+                            ${(index + 1) > props.level ? "bg-gray-400 dark:bg-bg-dark" : "bg-primary rotate-ball  dark:bg-gray-300"}  
                             `
                         }
                     />)

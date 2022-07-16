@@ -6,12 +6,14 @@ export const eslocal: IPosibleLocals = {
     downloadCV: "Descargar Curriculum",
     about: "Sobre mi",
     resume: "Curriculum",
+    techs: "Tecnologias",
     month: "mes",
     year: "año",
     months: "meses",
     years: "años",
     projects: "Proyectos",
     aboutView: {
+        conect: "Conecta Conmigo",
         contact: "Contacto",
         title: "<span class='text-primary dark:text-lightText'> Sobre</span> Mi",
         description:
@@ -106,7 +108,7 @@ export const eslocal: IPosibleLocals = {
                                     Análisis y Desarrollo de componentes web y SPA en reactjs y vuejs.
                                 </li>
                                 <li>
-                                    Análisis, Diseño y desarrollo de APIs REST con Node.js
+                                    Análisis, Diseño y desarrollo de APIs REST con Node.js.
                                 </li>
                                 <li>
                                     Diseño de arquitectura de proyectos web y microservicios cloud native.
@@ -115,7 +117,7 @@ export const eslocal: IPosibleLocals = {
                                     Automatización de tareas.
                                 </li>
                                 <li>
-                                    Contenerización de aplicación y entornos de desarrollo con Docker y Docker Compose
+                                    Contenerización de aplicación y entornos de desarrollo con Docker y Docker Compose.
                                 </li>
                             </ul>
                         `,

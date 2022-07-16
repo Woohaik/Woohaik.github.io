@@ -71,3 +71,33 @@
         transform: scale(1.1);
     }
 }
+
+.rotate-ball {
+    transition: all 0.7s;
+    transform: rotateY(0deg);
+}
+
+.dark .rotate-ball {
+    transform: rotateY(180deg);
+}
+
+
+.rotate-square {
+    transition: all 0.7s;
+    transform: rotateX(0deg);
+
+    div {
+
+        transition: all 0.7s;
+    }
+}
+
+.dark .rotate-square {
+    transform: rotateX(180deg);
+
+    div {
+        transform: rotateX(180deg);
+
+    }
+
+}

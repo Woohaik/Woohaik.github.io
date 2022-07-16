@@ -58,7 +58,7 @@ const Experience: FC<IProps> = (props) => {
                             <div className="text-[14px] mt-1" dangerouslySetInnerHTML={{ __html: role.description }} />
                             <div className="text-[12px] font-medium text-primary mt-1 dark:text-primary-dark">
                                 <span className="text-dark dark:text-white">
-                                    Tecnologias:&nbsp;
+                                    {t(POSIBLE_LOCALS.techs)}:&nbsp;
                                 </span>
                                 {
                                     role.technologies.join(", ")

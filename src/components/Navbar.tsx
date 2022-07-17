@@ -5,14 +5,14 @@ import { FaBriefcase, FaUser, FaFile } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { ILocals } from "../utils/types";
 import { POSIBLE_LOCALS } from "../utils/constants";
-import { useLocales } from "../utils/useLocales";
+import { useLocales } from "../utils/hooks/useLocales";
 
 const Navbar = () => {
     const { t } = useTranslation();
     const [currentLocale, setCurrentLocale] = useLocales();
 
     return (
-        <div className="max-w-[1240px] mx-auto flex gap-7  justify-end">
+        <div className="max-w-[1240px] ml-auto flex gap-7  justify-end">
 
             <div className="navbar overflow-hidden rounded-md h-auto flex gap-10 p-3  z-10  justify-between dark:bg-dark bg-white  max-w-[1240px] ">
                 <NavbarItem
@@ -20,6 +20,7 @@ const Navbar = () => {
                     icon={<FaUser className="w-5 h-5" />}
                     text={t(POSIBLE_LOCALS.about)}
                 />
+
                 <NavbarItem
                     to="/resume"
                     icon={<FaFile className="w-5 h-5" />}

@@ -86,3 +86,11 @@ export const MY_CERTIFICATIONS = [
         link: "https://www.credly.com/badges/894de035-d6c4-43c7-a531-23be48732b27/public_url"
     }
 ];
+
+export const SCREEN_SIZES = {
+    mobile: 425,
+    tablet: 768,
+    laptop: 1024,
+    default: 10000000,
+    largeLaptop: 1600
+};

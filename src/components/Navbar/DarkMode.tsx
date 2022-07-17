@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { useDarkMode } from "../../utils/useDarkMode";
+import { useDarkMode } from "../../utils/hooks/useDarkMode";
 import { FaMoon, FaSun } from "react-icons/fa";
 const DarkMode: FC = () => {
     const [isDarkMode, toggleDarkMode] = useDarkMode();

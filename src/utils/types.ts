@@ -1,4 +1,4 @@
-import { LANGUAGES, POSIBLE_LOCALS, PROJECTS_CATEGORIES } from "./constants";
+import { LANGUAGES, POSIBLE_LOCALS, PROJECTS_CATEGORIES, SCREEN_SIZES } from "./constants";
 
 export type ILocals = keyof typeof LANGUAGES;
 
@@ -32,3 +32,7 @@ export interface IExperience {
     place: IWorkPlace,
     roles: IExperiencePeriod[]
 }
+
+export type ScreenSizeType = keyof typeof SCREEN_SIZES;
+
+export type ResponsiveOptions = { [key in keyof typeof SCREEN_SIZES]: number | string }; // eslint-disable-line

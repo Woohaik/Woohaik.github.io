@@ -1,19 +1,30 @@
 import React, { FC } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { getResponsiveSize } from "../utils/functions";
+import useMediaQuery from "../utils/hooks/useMediaQuery";
+import { ResponsiveOptions } from "../utils/types";
 
 const BGParticles: FC = () => {
-    const particlesInit = async (main: any) => {
-        console.log(main);
+    const mediaQuerySize = useMediaQuery();
 
-        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
+    const responsiveDisplay: ResponsiveOptions = {
+        largeLaptop: "block",
+        laptop: "block",
+        tablet: "none",
+        mobile: "none",
+        default: "block"
+    };
+
+    const particlesInit = async (main: any) => {
         await loadFull(main);
     };
 
     return (
         <Particles
+            style={{
+                display: getResponsiveSize(mediaQuerySize, responsiveDisplay) as "block" | "none"
+            }}
             id="tsparticles"
             init={particlesInit}
 

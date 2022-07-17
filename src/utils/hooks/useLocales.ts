@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import i18n from "i18next";
-import { ILocals } from "./types";
-import { LANGUAGES } from "./constants";
+import { ILocals } from "../types";
+import { LANGUAGES } from "../constants";
 
 export const useLocales = (): [ILocals, (newLocale: ILocals) => void] => {
     const [currentLocale, setCurrentLocale] = useState<ILocals>(() => localStorage.getItem("locale") as ILocals ?? LANGUAGES.es); // If is not use "es"

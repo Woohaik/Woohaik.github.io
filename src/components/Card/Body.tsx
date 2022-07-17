@@ -4,13 +4,34 @@ import { FaGithub, FaStackOverflow, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { POSIBLE_LOCALS } from "../../utils/constants";
+import { ResponsiveOptions } from "../../utils/types";
+import { getResponsiveSize } from "../../utils/functions";
+import useMediaQuery from "../../utils/hooks/useMediaQuery";
 
 const Body = () => {
     const { t } = useTranslation();
+    const mediaQuerySize = useMediaQuery();
+    const responsiveImageH: ResponsiveOptions = {
+        largeLaptop: 380,
+        mobile: 330,
+        laptop: 340,
+        tablet: 360,
+        default: 440
+    };
 
+    const responsiveImageW: ResponsiveOptions = {
+        largeLaptop: 400,
+        mobile: 320,
+        laptop: 340,
+        tablet: 360,
+        default: 440
+    };
     return (
         <div className="profile dark:bg-dark z-10 bg-white navbar rounded-md">
-            <div className="h-[420px] w-[420px] rounded-md">
+            <div style={{
+                height: getResponsiveSize(mediaQuerySize, responsiveImageH),
+                width: getResponsiveSize(mediaQuerySize, responsiveImageW)
+            }} className="rounded-md">
                 <img className="h-[100%] rounded-md w-[450px] object-cover image-clip-path" src={me} alt="" />
             </div>
             <div className="text-center my-5">

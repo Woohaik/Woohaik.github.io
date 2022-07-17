@@ -13,8 +13,8 @@ const Project: FC<IProps> = ({ project }) => {
         <>
             <Modal changeState={modalState}>
                 <ModalBody>
-                    <div className="w-[100%] h-[250px] ">
-                        <img className="w-[100%] h-[250px] object-cover" src="https://via.placeholder.com/300x200.png" alt="project preview" />
+                    <div className="w-[100%] h-[320px] overflow-hidden ">
+                        <img className="w-[100%] h-[320px] object-cover" {...({ src: project.img ? require(`./../assets/projects/${project.img}`) : "https://via.placeholder.com/300x150.png" })} alt="project preview" />
                     </div>
                     <div className="px-2 pt-3 pb-2 text-[20px] text-center font-medium">
                         {project.title}
@@ -24,7 +24,9 @@ const Project: FC<IProps> = ({ project }) => {
             </Modal>
             <div onClick={() => { setModalState(modalState + 1); }} className="project-card relative after:absolute after:w-[100%] rounded-md  after:h-[100%] after:cursor-pointer">
                 <div className="w-[100%] h-[180px] rounded-md overflow-hidden">
-                    <img className="rounded-md  w-[100%] h-[180px] object-cover " src="https://via.placeholder.com/300x150.png" alt="project preview" />
+                    <img className="rounded-md  w-[100%] h-[180px] object-cover "
+                        {...({ src: project.img ? require(`./../assets/projects/${project.img}`) : "https://via.placeholder.com/300x150.png" })}
+                        alt="project preview" />
                 </div>
                 <div className="project-card__body bg-white dark:bg-dark text-[13px]">
                     <div className="px-2 pt-2 text-[18px] text-center font-medium">

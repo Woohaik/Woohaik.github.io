@@ -10,6 +10,9 @@ export interface IProject {
     categories: PROJECTS_CATEGORIES_TYPES[]
     technologies: string[],
     title: string,
+    repository?: string,
+    img?: string,
+    deployment: string,
     description: string
 }
 

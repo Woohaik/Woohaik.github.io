@@ -63,28 +63,93 @@ export const frlocal: IPosibleLocals = {
         },
         projects: [
             {
+                categories: ["Vscode"],
+                technologies: ["Typescript", "CSS"],
+                title: "vscode-rickroll",
+                img: "vscode-rickroll.gif",
+                description: "hayxd  bro",
+                deployment: "https://marketplace.visualstudio.com/items?itemName=Woohaik.vscode-rickroll",
+                repository: "https://github.com/Woohaik/vscode-rickroll"
+            },
+
+            {
                 categories: ["Frontend"],
-                technologies: ["Vuejs", "Typescript", "SCSS"],
-                title: "supra chat francais ",
-                description: "hay bro"
+                technologies: ["Reactjs", "Typescript", "S3", "Cloudfront"],
+                title: "Sort Algorithme Visualizer",
+                img: "sort-algo-visualizer.png",
+                description: "hay bro",
+                deployment: "https://d2i3u80xnhzugk.cloudfront.net",
+                repository: "https://github.com/Woohaik/sort-visualize"
             },
             {
                 categories: ["Frontend"],
-                technologies: ["Vuejs", "Typescript", "SCSS"],
-                title: "supra asdsdfsdf chat francais ",
-                description: "hayxd  bro"
+                technologies: ["Javascript", "SCSS", "JQuery", "S3", "Cloudfront"],
+                title: "Uneatlantico's Residence Web Clone",
+                img: "residencia-clone.png",
+                description: "hay bro",
+                deployment: "https://d1yk06cdai7txo.cloudfront.net/",
+                repository: "https://github.com/Woohaik/Residencia"
+            },
+            {
+                categories: ["Frontend"],
+                technologies: ["Javascript", "Nuxtjs", "i18n"],
+                title: "Tabla de Composición Nutricional",
+                img: "tabla-nutricional.png",
+                description: "hay bro",
+                deployment: "https://composicionnutricional.com"
             },
             {
                 categories: ["npm"],
-                technologies: ["Vuejs", "Typescript", "SCSS"],
+                technologies: ["Typescript", "npm"],
                 title: "tbin-tree",
-                description: "Aca va el tbin bro"
+                img: "npm-logo.png",
+                description: "Aca va el tbin bro",
+                deployment: "https://www.npmjs.com/package/tbin-tree",
+                repository: "https://github.com/Woohaik/bin-tree"
             },
             {
-                categories: ["Frontend", "Vscode"],
-                technologies: ["Vuejs", "mangote", "SCSS"],
-                title: "La revolucion industrial fue xd",
-                description: "hay bro"
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "SCSS", "Route53", "S3", "Cloudfront", "Lambda"],
+                title: "Bill Gates Scholl Web Page",
+                img: "bill-gates-school.png",
+                description: "hay bro",
+                deployment: "https://djeo5ux2imymg.cloudfront.net"
+            },
+            {
+                categories: ["Frontend"],
+                technologies: ["Wordpress", "Php", "JQuery", "CSS"],
+                title: "Cantina La Mexicana Web Page",
+                img: "cantina.png",
+                description: "hay bro",
+                deployment: "https://cantinalamexicana.es/nosotros/"
+            },
+
+            {
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "Javascript", "CSS", "HTML"],
+                title: "Card Memory Game",
+                img: "card-memory-game.png",
+                description: "hay bro",
+                deployment: "https://d1ozgsa565oy1f.cloudfront.net",
+                repository: "https://github.com/Woohaik/card-memory-game"
+            },
+
+            {
+                categories: ["Frontend", "npm"],
+                technologies: ["Reactjs", "Typescript", "GitHubActions", "npm"],
+                title: "react-date-range-divider",
+                img: "npm-logo.png",
+                description: "hay bro",
+                deployment: "https://www.npmjs.com/package/react-date-range-divider"
+            },
+            {
+                categories: ["Frontend"],
+                technologies: ["Vuejs", "Typescript", "Heroku", "SCSS"],
+                title: "Supra Kat",
+                img: "supra-kat.png",
+                description: "hay bro",
+                deployment: "https://supra-kat.herokuapp.com",
+                repository: "https://github.com/Woohaik/supra-kat"
             }
         ]
     },

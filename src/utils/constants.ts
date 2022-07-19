@@ -50,6 +50,8 @@ export const POSIBLE_LOCALS = {
     },
     projectsView: {
         title: "title",
+        deploy: "deploy",
+        repository: "repository",
         projectCategories: {
             All: "All",
             Frontend: "Frontend",

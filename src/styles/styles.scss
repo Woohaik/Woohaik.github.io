@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "./base";
 @import "./variables";
 @import "./keyframes";
 @import "./mixins";
@@ -8,16 +6,17 @@
 @import "./override";
 @import "./components/_components";
 
-#app {
+
+html {
     background: rgb(16, 98, 165);
     animation: bg-flow 5s infinite alternate;
-    background-image: linear-gradient(45deg, #1e8c7e, #64b3d9, #208ea2, #498ada, #5b73df, #897ed3, #8172e0);
+    background-image: linear-gradient(0deg, #1e8c7e, #64b3d9, #208ea2, #498ada, #5b73df);
     background-size: 1100% 1100%;
     transition: all 0.3s;
 }
 
-.dark #app {
-    background-image: linear-gradient(45deg, #505b67, #3a434c, #353d47, #2b3138);
+html.dark {
+    background-image: linear-gradient(0deg, #505b67, #3a434c, #353d47);
 }
 
 .profile {

@@ -14,7 +14,7 @@ export const enlocal: IPosibleLocals = {
 
     projects: "Projects",
     aboutView: {
-        fullDegree: "Grado en Ingeniería Informática",
+        fullDegree: "Degree in Computer Engineering",
         conect: "Conect With Me",
         contact: "Contact",
         title: "<span class='text-primary dark:text-lightText'> About</span> Me",
@@ -55,6 +55,8 @@ export const enlocal: IPosibleLocals = {
     },
     projectsView: {
         title: "<span class='text-primary dark:text-lightText'> My</span> Projects",
+        deploy: "Deployment",
+        repository: "Repository",
         projectCategories: {
             All: "All",
             Frontend: "Frontend",
@@ -76,7 +78,7 @@ export const enlocal: IPosibleLocals = {
                 categories: ["Frontend"],
                 technologies: ["Reactjs", "Typescript", "S3", "Cloudfront"],
                 title: "Sort Algorithme Visualizer",
-                img: "sort-algo-visualizer.png",
+                img: "sort-algo-visualizer.webp",
                 description: "hay bro",
                 deployment: "https://d2i3u80xnhzugk.cloudfront.net",
                 repository: "https://github.com/Woohaik/sort-visualize"
@@ -85,7 +87,7 @@ export const enlocal: IPosibleLocals = {
                 categories: ["Frontend"],
                 technologies: ["Javascript", "SCSS", "JQuery", "S3", "Cloudfront"],
                 title: "Uneatlantico's Residence Web Clone",
-                img: "residencia-clone.png",
+                img: "residencia-clone.webp",
                 description: "hay bro",
                 deployment: "https://d1yk06cdai7txo.cloudfront.net/",
                 repository: "https://github.com/Woohaik/Residencia"
@@ -93,8 +95,8 @@ export const enlocal: IPosibleLocals = {
             {
                 categories: ["Frontend"],
                 technologies: ["Javascript", "Nuxtjs", "i18n"],
-                title: "Tabla de Composición Nutricional",
-                img: "tabla-nutricional.png",
+                title: "Nutritional Composition Table",
+                img: "tabla-nutricional.webp",
                 description: "hay bro",
                 deployment: "https://composicionnutricional.com"
             },
@@ -102,7 +104,7 @@ export const enlocal: IPosibleLocals = {
                 categories: ["npm"],
                 technologies: ["Typescript", "npm"],
                 title: "tbin-tree",
-                img: "npm-logo.png",
+                img: "npm-logo.webp",
                 description: "Aca va el tbin bro",
                 deployment: "https://www.npmjs.com/package/tbin-tree",
                 repository: "https://github.com/Woohaik/bin-tree"
@@ -110,8 +112,8 @@ export const enlocal: IPosibleLocals = {
             {
                 categories: ["Frontend"],
                 technologies: ["Vuejs", "SCSS", "Route53", "S3", "Cloudfront", "Lambda"],
-                title: "Bill Gates Scholl Web Page",
-                img: "bill-gates-school.png",
+                title: "Página Web Colegio Bill Gates",
+                img: "bill-gates-school.webp",
                 description: "hay bro",
                 deployment: "https://djeo5ux2imymg.cloudfront.net"
             },
@@ -119,7 +121,7 @@ export const enlocal: IPosibleLocals = {
                 categories: ["Frontend"],
                 technologies: ["Reactjs", "Typescript", "SCSS", "Tailwindcss"],
                 title: "Portafolio",
-                img: "cantina.png",
+                img: "portafolio.webp",
                 description: "hay bro",
                 deployment: "https://cantinalamexicana.es/nosotros/"
             },
@@ -128,7 +130,7 @@ export const enlocal: IPosibleLocals = {
                 categories: ["Frontend"],
                 technologies: ["Vuejs", "Javascript", "CSS", "HTML"],
                 title: "Card Memory Game",
-                img: "card-memory-game.png",
+                img: "card-memory-game.webp",
                 description: "hay bro",
                 deployment: "https://d1ozgsa565oy1f.cloudfront.net",
                 repository: "https://github.com/Woohaik/card-memory-game"
@@ -138,7 +140,7 @@ export const enlocal: IPosibleLocals = {
                 categories: ["Frontend", "npm"],
                 technologies: ["Reactjs", "Typescript", "GitHubActions", "npm"],
                 title: "react-date-range-divider",
-                img: "npm-logo.png",
+                img: "npm-logo.webp",
                 description: "hay bro",
                 deployment: "https://www.npmjs.com/package/react-date-range-divider"
             },
@@ -146,7 +148,7 @@ export const enlocal: IPosibleLocals = {
                 categories: ["Frontend"],
                 technologies: ["Vuejs", "Typescript", "Heroku", "SCSS"],
                 title: "Supra Kat",
-                img: "supra-kat.png",
+                img: "supra-kat.webp",
                 description: "hay bro",
                 deployment: "https://supra-kat.herokuapp.com",
                 repository: "https://github.com/Woohaik/supra-kat"

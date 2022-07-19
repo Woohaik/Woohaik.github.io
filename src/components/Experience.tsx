@@ -68,7 +68,7 @@ const Experience: FC<IProps> = (props) => {
                                     calcTimeDiference(...role.period)
                                 }
                             </div>
-                            <div className="text-[15px] mt-1" dangerouslySetInnerHTML={{ __html: role.description }} />
+                            <div className="text-[14px] mt-1" dangerouslySetInnerHTML={{ __html: role.description }} />
                             <div className="text-[13px] font-medium text-primary mt-1 dark:text-primary-dark">
                                 <span className="text-dark dark:text-white">
                                     {t(POSIBLE_LOCALS.techs)}:&nbsp;

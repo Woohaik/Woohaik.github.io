@@ -25,7 +25,7 @@ const CertificationCard: FC<IProps> = (props) => {
             <img style={{
                 height: getResponsiveSize(mediaQuerySize, responsiveImgSize)
             }} className="certification-card__img w-auto mx-auto transition-all" src={props.imageUrl} alt="project preview" />
-            <div className="certification-card__text px-2 pt-2 text-[14px] text-center font-medium">
+            <div className="certification-card__text px-2 pt-2 text-[15px] text-center font-medium">
                 {props.title}
             </div>
         </a>

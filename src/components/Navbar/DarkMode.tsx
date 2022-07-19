@@ -4,11 +4,11 @@ import { FaMoon, FaSun } from "react-icons/fa";
 const DarkMode: FC = () => {
     const [isDarkMode, toggleDarkMode] = useDarkMode();
     return (
-        <div onClick={() => toggleDarkMode()} className=" rounded-md h-auto flex  z-10    px-6 cursor-pointer place-items-center justify-between  dark:bg-dark bg-white hover">
+        <div onClick={() => toggleDarkMode()} className=" rounded-md h-auto flex  z-10 px-5 lg:px-6 cursor-pointer place-items-center justify-between  dark:bg-dark bg-white hover">
             {
                 isDarkMode
-                    ? <FaMoon className="w-8 h-8" />
-                    : <FaSun className="w-8 h-8" />
+                    ? <FaMoon className="lg:w-8 md:w-7 lg:h-8 md:h-7 h-6 w-6" />
+                    : <FaSun className="lg:w-8 md:w-7 lg:h-8 md:h-7 h-6 w-6" />
             }
         </div>
     );

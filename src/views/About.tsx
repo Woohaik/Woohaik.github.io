@@ -33,7 +33,7 @@ const AboutView = () => {
         <Card>
             <CardTitle html={t(POSIBLE_LOCALS.aboutView.title)} />
             <CardBody>
-                <div className="flex gap-4 mb-3">
+                <div className="flex gap-4 mb-3 lg:flex-row sm:flex-col flex-col ">
                     <div className="flex-1 text-justify" dangerouslySetInnerHTML={{ __html: t(POSIBLE_LOCALS.aboutView.description) }} />
                     <div style={{ flex: "0 1 250px" }}>
                         <ColorSquare text={age + ""} title={t(POSIBLE_LOCALS.aboutView.age)} />
@@ -50,10 +50,6 @@ const AboutView = () => {
                             text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.nationality)}
                         />
                         <ColorSquare
-                            title={t(POSIBLE_LOCALS.aboutView.nationality)}
-                            text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.nationality)}
-                        />
-                        <ColorSquare
                             title={t(POSIBLE_LOCALS.aboutView.movility)}
                             text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.movility)}
                         />
@@ -64,23 +60,23 @@ const AboutView = () => {
                     </div>
                 </div>
                 <CardSubTitle icon={<FaCertificate />} html={t(POSIBLE_LOCALS.aboutView.certificationSubTitle)} />
-                <div className="grid grid-cols-4 gap-3  ">
+                <div className="grid lg:grid-cols-4 mb-3 sm:grid-cols-2 gap-3  ">
                     {
                         MY_CERTIFICATIONS.map(cert => <CertificationCard key={cert.title} {...cert} />)
                     }
                 </div>
-                <div className="grid grid-cols-2 gap-4 ">
-                    <div className="mb-3">
+                <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 ">
+                    <div className="mb-1">
                         <CardSubTitle icon={<FaUserGraduate />} html={t(POSIBLE_LOCALS.aboutView.educationSubTitle)} />
-                        <div className="text-center">
-                            <img className="h-[100px] w-auto mx-auto " src={logoUneat} alt="logo uneatlantico" />
-                            <div className="font-medium mt-2">
+                        <div className="text-center pt-2">
+                            <img className="h-[70px] w-auto mx-auto " src={logoUneat} alt="logo uneatlantico" />
+                            <div className="font-medium mt-2 text-[18px]">
+                                {t(POSIBLE_LOCALS.aboutView.fullDegree)}
+                            </div>
+                            <div className="text-[13px]" >
                                 {t(POSIBLE_LOCALS.aboutView.university)}
                             </div>
-                            <div>
-                                {aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.degree)}
-                            </div>
-                            <div className="text-[13px] dark:text-primary-dark">
+                            <div className="text-[14px] dark:text-primary-dark">
                                 {
                                     universityRange
                                 }
@@ -89,7 +85,7 @@ const AboutView = () => {
                     </div>
                     <div>
                         <CardSubTitle icon={<FaGlobe />} html={t(POSIBLE_LOCALS.aboutView.languagesSubTitle)} />
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col pt-2 pb-4 gap-5">
                             <LanguageLevel flag={ES} level={9} />
                             <LanguageLevel flag={GB} level={6} />
                             <LanguageLevel flag={FR} level={3} />
@@ -98,7 +94,7 @@ const AboutView = () => {
 
                 </div>
                 <CardSubTitle icon={<FaAddressBook />} html={t(POSIBLE_LOCALS.aboutView.contact)} />
-                <div className="flex gap-6">
+                <div className="flex gap-6 lg:flex-row sm:flex-col">
                     <div className="flex-1">
                         <ColorSquare
                             title={"Email"}

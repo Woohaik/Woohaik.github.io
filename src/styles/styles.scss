@@ -21,5 +21,6 @@
 }
 
 .profile {
+    transition: opacity 0.4s, marginTop 0.4s;
     box-shadow: 8px 7px 8px 10px rgba(0, 0, 0, 0.15);
 }

@@ -24,6 +24,8 @@ export const POSIBLE_LOCALS = {
     resume: "resume",
     projects: "projects",
     aboutView: {
+        fullDegree: "fullDegree",
+        degree: "degree",
         title: "title",
         description: "description",
         conect: "conect",
@@ -36,7 +38,6 @@ export const POSIBLE_LOCALS = {
         },
         university: "university",
         age: "age",
-        degree: "degree",
         nationality: "nationality",
         residence: "residence",
         movility: "movility",
@@ -88,9 +89,9 @@ export const MY_CERTIFICATIONS = [
 ];
 
 export const SCREEN_SIZES = {
-    mobile: 425,
-    tablet: 768,
-    laptop: 1024,
+    mobile: 426,
+    tablet: 767,
+    laptop: 1025,
     default: 10000000,
     largeLaptop: 1600
 };

@@ -8,8 +8,8 @@ interface IProps {
 const CardTitle: FC<IProps> = (props) => {
     return (
         <>
-            <div className=" card__title relative flex justify-between text-xl pb-5 px-4 bg-white dark:bg-dark font-semibold">
-                <div dangerouslySetInnerHTML={{ __html: props.html }} />
+            <div className=" card__title relative flex justify-between text-xl lg:flex-row sm:flex-col flex-col pb-5 px-4 bg-white dark:bg-dark font-semibold">
+                <div className="mb-1 " dangerouslySetInnerHTML={{ __html: props.html }} />
                 {
                     props.children
                 }

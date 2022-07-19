@@ -34,7 +34,7 @@ const BGParticles: FC = () => {
                         value: "transparent"
                     }
                 },
-                fpsLimit: 120,
+                fpsLimit: 144,
                 interactivity: {
                     events: {
                         resize: true
@@ -52,7 +52,7 @@ const BGParticles: FC = () => {
                         width: 1
                     },
                     collisions: {
-                        enable: true
+                        enable: false
                     },
                     move: {
                         direction: "none",
@@ -72,7 +72,7 @@ const BGParticles: FC = () => {
                             enable: true,
                             area: 1000
                         },
-                        value: 60
+                        value: 50
                     },
                     opacity: {
                         value: 0.5

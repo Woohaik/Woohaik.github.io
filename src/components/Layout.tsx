@@ -15,7 +15,7 @@ const Layout = () => {
         mobile: 900,
         laptop: 1000,
         tablet: 1100,
-        default: 1200
+        default: 1250
     };
 
     const flexDirection: ResponsiveOptions = {
@@ -39,7 +39,7 @@ const Layout = () => {
             <BGParticles />
             <div className={`w-[100%] mx-auto flex my-auto  flex-${getResponsiveSize(mediaQuerySize, flexDirection)}`} >
                 <Body />
-                <div className="card-area relative w-[100%]">
+                <div className="card-area  lg:relative md:relative sm:static static  w-[100%]">
                     <AnimatedRoutes />
                 </div>
             </div>

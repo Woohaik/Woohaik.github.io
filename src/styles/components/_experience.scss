@@ -1,7 +1,4 @@
 .experience {
-    &__company {
-        flex: 0 1 250px;
-    }
 
     &__timeline {
         &__item {
@@ -13,7 +10,7 @@
                         content: "";
                         position: absolute;
                         z-index: 1;
-                        left: -18px;
+                        left: -14px;
                         top: 50%;
                         transform: translateY(-50%);
                         border-radius: 50%;
@@ -27,10 +24,11 @@
         }
 
         &::before {
+
             content: "";
             position: absolute;
             z-index: 1;
-            left: -18px;
+            left: -14px;
             top: 2px;
             height: 20px;
             width: 10px;
@@ -38,9 +36,10 @@
         }
 
         &::after {
+
             position: absolute;
             content: "";
-            left: -15px;
+            left: -11px;
             top: 2px;
             height: 110%;
             width: 4px;

@@ -14,6 +14,7 @@ export const enlocal: IPosibleLocals = {
 
     projects: "Projects",
     aboutView: {
+        fullDegree: "Grado en Ingeniería Informática",
         conect: "Conect With Me",
         contact: "Contact",
         title: "<span class='text-primary dark:text-lightText'> About</span> Me",
@@ -116,8 +117,8 @@ export const enlocal: IPosibleLocals = {
             },
             {
                 categories: ["Frontend"],
-                technologies: ["Wordpress", "Php", "JQuery", "CSS"],
-                title: "Cantina La Mexicana Web Page",
+                technologies: ["Reactjs", "Typescript", "SCSS", "Tailwindcss"],
+                title: "Portafolio",
                 img: "cantina.png",
                 description: "hay bro",
                 deployment: "https://cantinalamexicana.es/nosotros/"

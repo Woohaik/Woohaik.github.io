@@ -13,6 +13,7 @@ export const frlocal: IPosibleLocals = {
     years: "années",
     projects: "Projets",
     aboutView: {
+        fullDegree: "Grado en Ingeniería Informática",
         conect: "Connectez",
         contact: "Contact",
         title: "<span class='text-primary dark:text-lightText'> À propos de</span> Moi",
@@ -117,8 +118,8 @@ export const frlocal: IPosibleLocals = {
             },
             {
                 categories: ["Frontend"],
-                technologies: ["Wordpress", "Php", "JQuery", "CSS"],
-                title: "Cantina La Mexicana Web Page",
+                technologies: ["Reactjs", "Typescript", "SCSS", "Tailwindcss"],
+                title: "Portafolio",
                 img: "cantina.png",
                 description: "hay bro",
                 deployment: "https://cantinalamexicana.es/nosotros/"

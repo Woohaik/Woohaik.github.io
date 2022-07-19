@@ -8,7 +8,7 @@ interface IProps {
 
 const ColorSquare: FC<IProps> = (props) => {
     return (
-        <div className="flex justify-between place-items-center pb-2" >
+        <div className="flex justify-between place-items-center gap-2 pb-2" >
             <div style={{ perspective: "600px" }}>
                 <div className="bg-primary rotate-square text-white p-1 pr-2 dark:bg-bg-dark">
                     <div>

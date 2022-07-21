@@ -1,0 +1,39 @@
+.ReactModal__Overlay {
+    z-index: 10;
+    background-color: rgba(40, 40, 40, 0.8) !important;
+}
+
+.ReactModal__Overlay .ReactModal__Content {
+    background-color: white !important;
+    animation: modal_animation 0.4s;
+
+}
+
+.dark .ReactModal__Overlay .ReactModal__Content {
+    background-color: #22272e !important;
+    color: white !important;
+}
+
+li {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(144, 157, 171, 0.4);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $primary;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background-color: #a5b0bb;
+}

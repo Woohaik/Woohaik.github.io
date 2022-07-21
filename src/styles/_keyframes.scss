@@ -1,0 +1,21 @@
+@keyframes bg-flow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 85% 85%;
+    }
+}
+
+@keyframes modal_animation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

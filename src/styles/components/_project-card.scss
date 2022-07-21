@@ -1,0 +1,41 @@
+.project-card {
+    @extend .background-color-hover;
+    $parent-selector: &;
+    cursor: pointer;
+
+    &::before {
+        @include afterBeforeFull();
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 1;
+        background-position: 50% calc(50% - 30px);
+        background-repeat: no-repeat;
+        background-size: 60px 60px;
+        background-image: url("https://www.freeiconspng.com/uploads/eye-icon-png-eye-icon-6.png");
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+
+        #{$parent-selector}__body {
+            transform: translateY(-15px);
+        }
+
+        &::before {
+            opacity: 0.2;
+        }
+
+    }
+
+    &__body {
+        transition: color 0s, transform 0.5s;
+    }
+}
+
+.project-description {
+    a {
+        text-decoration: underline;
+    }
+}

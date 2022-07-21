@@ -1,0 +1,25 @@
+@import "./base";
+@import "./variables";
+@import "./keyframes";
+@import "./mixins";
+@import "./utils";
+@import "./override";
+@import "./components/_components";
+
+
+html {
+    background: rgb(16, 98, 165);
+    animation: bg-flow 5s infinite alternate;
+    background-image: linear-gradient(0deg, #1e8c7e, #64b3d9, #208ea2, #498ada, #5b73df);
+    background-size: 1100% 1100%;
+    transition: all 0.3s;
+}
+
+html.dark {
+    background-image: linear-gradient(0deg, #505b67, #3a434c, #353d47);
+}
+
+.profile {
+    transition: opacity 0.4s, marginTop 0.4s;
+    box-shadow: 8px 7px 8px 10px rgba(0, 0, 0, 0.15);
+}

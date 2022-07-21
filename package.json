@@ -1,19 +1,15 @@
 {
   "name": "portafolio",
   "version": "0.1.0",
-  "private": true,
+  "description": "Portafolio personal desarrollado con react y typescript en el cual recopilar mi información, como curriculum, certificados, proyectos personales o colaboraciones con que tengan una URL pública.",
+  "homepage": "https://Woohaik.github.io/Portafolio",
+  "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.42",
-    "@types/react": "^18.0.14",
-    "@types/react-dom": "^18.0.5",
     "country-flag-icons": "^1.5.5",
     "date-diff": "^1.0.2",
     "formik": "^2.2.9",
     "framer-motion": "^6.3.16",
+    "gh-pages": "^4.0.0",
     "i18next": "^21.8.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "npx eslint **/**.ts* --fix"
@@ -51,7 +49,14 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
     "@types/country-flag-icons": "^1.2.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.42",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "@types/react-modal": "^3.13.1",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",

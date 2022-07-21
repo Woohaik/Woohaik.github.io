@@ -147,7 +147,7 @@ export const frlocal: IPosibleLocals = {
                     et
                     <a href="https://www.linkedin.com/in/kevin-acuna">Kevin Acuña</a>, 
                     l'application web développée avec Nuxtjs pour tirer parti de la capacité de rendu du serveur 
-                    SSR est une refonte de l'ancienne application de composition alimentaire funiber 
+                    SSR est une refonte de l'ancienne application de composition alimentaire <a href="https://www.funiber.org/">FUNIBER</a> 
                     avec une traduction dynamique pour 4 langues à l'aide du module i18n.
                 </p>
             `,
@@ -190,7 +190,7 @@ export const frlocal: IPosibleLocals = {
                             Déploiement et intégration continue avec des actions github et un formulaire de contact implémenté avec AWS Lambda avec nodejs et Api Gateway. 
                         </p>
                 `,
-                deployment: "https://djeo5ux2imymg.cloudfront.net"
+                deployment: "https://www.colegiobillgates.edu.sv"
             },
             {
                 categories: ["Frontend"],
@@ -205,7 +205,7 @@ export const frlocal: IPosibleLocals = {
                         collaborations avec qui ont une URL publique.
                     </p>
                 `,
-                deployment: "https://cantinalamexicana.es/nosotros/",
+                deployment: "https://Woohaik.github.io",
                 repository: "https://github.com/Woohaik/Portafolio"
             },
 

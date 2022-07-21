@@ -79,14 +79,14 @@ export const eslocal: IPosibleLocals = {
                 <p>
                 Extensión  para el editor de código <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
                 Visual Studio Code
-                </a>, perfecta para rickrollear a tus compañeros que dejan el ordenador desbloqueado.
+                </a>. Perfecta para rickrollear a tus compañeros que dejan el ordenador desbloqueado.
 
                 </p>
                 <br/>
                 <p>
-                    Una vez instalada se ejecutará mientras se esté usando el editor haciendo cambiar el fondo con Rick, 
+                    Una vez instalada se ejecutará mientras se esté usando el editor, cambiando el fondo con Rick, 
                     cuando el fondo cambia la música comenzará a sonar de fondo.
-                    Cerrar y abrir el editor no funcionara para removerlo.                
+                    Cerrar y abrir el editor no funcionará para removerlo.                
                 </p>
                 <br/>
                 <p>
@@ -120,7 +120,7 @@ export const eslocal: IPosibleLocals = {
                 description:
                     `
                     <p>
-                        Clon de sitio web de residencia universitaria de uneatlantico. Fue hecho como un ejercicio de maquetación, interactividad y responsive usando javascript,
+                        Clon de sitio web de residencia universitaria de Uneatlantico. Fue hecho como un ejercicio de maquetación, interactividad y responsive usando javascript,
                         jquery y CSS. Está hospedada en AWS usando S3 y cloudfront.
                     </p>
                 `,
@@ -145,7 +145,7 @@ export const eslocal: IPosibleLocals = {
                     y
                     <a href="https://www.linkedin.com/in/kevin-acuna">Kevin Acuña</a>, 
                     aplicación web desarrollada con Nuxtjs para aprovechar las capacidad del Renderizado desde el Servidor
-                    SSR es un cambio de imagen a la antigua aplicación de composición de alimentos de funiber cuenta
+                    SSR es un cambio de imagen a la antigua aplicación de composición de alimentos de <a href="https://www.funiber.org/">FUNIBER</a> cuenta
                     Traducción dinámica  para 4 idiomas usando módulo de i18n.
                 </p>
             `,
@@ -188,7 +188,7 @@ export const eslocal: IPosibleLocals = {
                             Cuenta con despliegue e integración continua con github actions y un formulario de contacto implementado AWS Lambda con nodejs y Api Gateway. 
                         </p>
                 `,
-                deployment: "https://djeo5ux2imymg.cloudfront.net"
+                deployment: "https://www.colegiobillgates.edu.sv"
             },
             {
                 categories: ["Frontend"],
@@ -202,7 +202,7 @@ export const eslocal: IPosibleLocals = {
                          como curriculum, certificados, proyectos personales o colaboraciones con que tengan una URL pública.
                     </p>
                 `,
-                deployment: "https://cantinalamexicana.es/nosotros/",
+                deployment: "https://Woohaik.github.io",
                 repository: "https://github.com/Woohaik/Portafolio"
             },
 
@@ -232,7 +232,7 @@ export const eslocal: IPosibleLocals = {
                     <img class="mb-2"  src="https://badgen.net/npm/dt/react-date-range-divider" />
                         <p>
                             Módulo de npm para React compatible con typescript de un selector de intervalos de fechas
-                            a el cual se le proporcionan un intervalo (fecha inicio y fecha fin) y luego puede ser divididos en “n” intervalos en días.
+                            al cual se le proporcionan un intervalo (fecha inicio y fecha fin) y luego puede ser divididos en “n” intervalos en días.
                         </p>
                     `,
                 deployment: "https://www.npmjs.com/package/react-date-range-divider",
@@ -246,7 +246,7 @@ export const eslocal: IPosibleLocals = {
                 description:
                     `
                 <p>
-                    Single Web Application (SPA) de una galería de gatos con scroll infinito desarrollada en VUEjs consumiendo el <a href="https://thecatapi.com">api de gatos</a>
+                    Single Web Application (SPA) de una galería de gatos con scroll infinito desarrollada en VUEjs consumiendo el <a href="https://thecatapi.com">API de gatos</a>
                 </p>
             `,
                 deployment: "https://supra-kat.herokuapp.com",

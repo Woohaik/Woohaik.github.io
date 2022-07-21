@@ -142,7 +142,7 @@ export const enlocal: IPosibleLocals = {
                     <a href="https://www.linkedin.com/in/dar%C3%ADo-ruiz-di%C3%A9guez-492416230/">Dario Ruiz</a>
                     and
                     <a href="https://www.linkedin.com/in/kevin-acuna">Kevin Acuña</a>, 
-                    Web application developed with Nuxtjs to take advantage of the Rendering from ServerSSR capability is a makeover to the old food composition application of funiber account.
+                    Web application developed with Nuxtjs to take advantage of the Rendering from ServerSSR capability is a makeover to the old food composition application of <a href="https://www.funiber.org/">FUNIBER</a> account.
                     Dynamic translation for 4 languages using i18n module.
                 </p>
             `,
@@ -184,7 +184,7 @@ export const enlocal: IPosibleLocals = {
                     It has deployment and continuous integration with github actions and a contact form implemented AWS Lambda with nodejs and Api Gateway. 
                     </p>
             `,
-                deployment: "https://djeo5ux2imymg.cloudfront.net"
+                deployment: "https://www.colegiobillgates.edu.sv"
             },
             {
                 categories: ["Frontend"],
@@ -199,7 +199,7 @@ export const enlocal: IPosibleLocals = {
                  
                 </p>
             `,
-                deployment: "https://cantinalamexicana.es/nosotros/"
+                deployment: "https://Woohaik.github.io"
             },
 
             {

@@ -73,7 +73,7 @@ const Body = () => {
                 </div>
             </div>
             <hr />
-            <Link className="h-[50px] flex justify-center place-items-center hover cursor-pointer" to="/files/Wilfredo-Hernandez-CV.pdf" target="_blank" download>
+            <Link className="h-[50px] flex justify-center place-items-center hover cursor-pointer" to={`/files/CV - Wilfredo Hernández ${t(POSIBLE_LOCALS.locale).split("-")[0].toUpperCase()}.pdf`} target="_blank" download>
                 {t(POSIBLE_LOCALS.downloadCV)}
             </Link>
         </div>

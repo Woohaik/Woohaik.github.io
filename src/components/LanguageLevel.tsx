@@ -20,7 +20,8 @@ const LanguageLevel: FC<IProps> = (props) => {
                         key={`language-l-${index}`}
                         className={
                             `
-                            w-[18px] h-[18px] rounded-full language-level__stair
+                            sm:w-[18px] sm:h-[18px]
+                            w-[15px] h-[15px] rounded-full language-level__stair
                             ${(index + 1) > props.level ? "bg-gray-400 dark:bg-bg-dark" : "bg-primary rotate-ball  dark:bg-gray-300"}  
                             `
                         }

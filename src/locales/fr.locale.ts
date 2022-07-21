@@ -206,7 +206,7 @@ export const frlocal: IPosibleLocals = {
                     </p>
                 `,
                 deployment: "https://Woohaik.github.io",
-                repository: "https://github.com/Woohaik/Portafolio"
+                repository: "https://github.com/Woohaik/Woohaik.github.io"
             },
 
             {

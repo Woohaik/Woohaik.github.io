@@ -199,7 +199,8 @@ export const enlocal: IPosibleLocals = {
                  
                 </p>
             `,
-                deployment: "https://Woohaik.github.io"
+                deployment: "https://Woohaik.github.io",
+                repository: "https://github.com/Woohaik/Woohaik.github.io"
             },
 
             {

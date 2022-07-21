@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portafolio/static/css/main.6be3c87e.css",
-    "main.js": "/Portafolio/static/js/main.1e8ea1de.js",
+    "main.js": "/Portafolio/static/js/main.9168f070.js",
     "static/media/vscode-rickroll.gif": "/Portafolio/static/media/vscode-rickroll.967fa87d888dc62ae2c7.gif",
     "static/media/card-memory-game.webp": "/Portafolio/static/media/card-memory-game.80ad73e14dddc6438acf.webp",
     "static/media/tabla-nutricional.webp": "/Portafolio/static/media/tabla-nutricional.2b87eeb8aa2834840b3b.webp",
@@ -10,16 +10,16 @@
     "static/media/residencia-clone.webp": "/Portafolio/static/media/residencia-clone.89f54da0cff3fccaba23.webp",
     "static/media/portafolio.webp": "/Portafolio/static/media/portafolio.a06540590219e398b780.webp",
     "static/media/me.webp": "/Portafolio/static/media/me.d38f3a5d2c29d0f53776.webp",
-    "static/media/logo_uneatlantico.svg": "/Portafolio/static/media/logo_uneatlantico.88bdc92573ed3a3b742f6dd0e19f5001.svg",
+    "static/media/logo_uneatlantico.svg": "/Portafolio/static/media/logo_uneatlantico.877f917eb8571e3e471ecdb0cc6aed4d.svg",
     "static/media/sort-algo-visualizer.webp": "/Portafolio/static/media/sort-algo-visualizer.c26d8bd94cd209851d2d.webp",
     "index.html": "/Portafolio/index.html",
     "static/media/npm-logo.svg": "/Portafolio/static/media/npm-logo.3cad4cc65b85a602c6ac.svg",
     "static/media/npm-logo.webp": "/Portafolio/static/media/npm-logo.ef72fb3c73a1afd90db5.webp",
     "main.6be3c87e.css.map": "/Portafolio/static/css/main.6be3c87e.css.map",
-    "main.1e8ea1de.js.map": "/Portafolio/static/js/main.1e8ea1de.js.map"
+    "main.9168f070.js.map": "/Portafolio/static/js/main.9168f070.js.map"
   },
   "entrypoints": [
     "static/css/main.6be3c87e.css",
-    "static/js/main.1e8ea1de.js"
+    "static/js/main.9168f070.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portafolio/static/css/main.6be3c87e.css",
-    "main.js": "/Portafolio/static/js/main.9168f070.js",
+    "main.css": "/Portafolio/static/css/main.e3b803ec.css",
+    "main.js": "/Portafolio/static/js/main.9f9067a0.js",
     "static/media/vscode-rickroll.gif": "/Portafolio/static/media/vscode-rickroll.967fa87d888dc62ae2c7.gif",
     "static/media/card-memory-game.webp": "/Portafolio/static/media/card-memory-game.80ad73e14dddc6438acf.webp",
     "static/media/tabla-nutricional.webp": "/Portafolio/static/media/tabla-nutricional.2b87eeb8aa2834840b3b.webp",
@@ -15,11 +15,11 @@
     "index.html": "/Portafolio/index.html",
     "static/media/npm-logo.svg": "/Portafolio/static/media/npm-logo.3cad4cc65b85a602c6ac.svg",
     "static/media/npm-logo.webp": "/Portafolio/static/media/npm-logo.ef72fb3c73a1afd90db5.webp",
-    "main.6be3c87e.css.map": "/Portafolio/static/css/main.6be3c87e.css.map",
-    "main.9168f070.js.map": "/Portafolio/static/js/main.9168f070.js.map"
+    "main.e3b803ec.css.map": "/Portafolio/static/css/main.e3b803ec.css.map",
+    "main.9f9067a0.js.map": "/Portafolio/static/js/main.9f9067a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6be3c87e.css",
-    "static/js/main.9168f070.js"
+    "static/css/main.e3b803ec.css",
+    "static/js/main.9f9067a0.js"
   ]
 }

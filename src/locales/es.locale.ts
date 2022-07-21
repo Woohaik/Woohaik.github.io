@@ -73,8 +73,25 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Typescript", "CSS"],
                 title: "vscode-rickroll",
                 img: "vscode-rickroll.gif",
-                description: `
-                <img src="https://vsmarketplacebadge.apphb.com/installs/woohaik.vscode-rickroll.svg?style=flat-square" /> 
+                description:
+                    `
+                <img class="mb-2" src="https://vsmarketplacebadge.apphb.com/installs/woohaik.vscode-rickroll.svg?style=flat-square" />
+                <p>
+                Extensión  para el editor de código <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+                Visual Studio Code
+                </a>, perfecta para rickrollear a tus compañeros que dejan el ordenador desbloqueado.
+
+                </p>
+                <br/>
+                <p>
+                    Una vez instalada se ejecutará mientras se esté usando el editor haciendo cambiar el fondo con Rick, 
+                    cuando el fondo cambia la música comenzará a sonar de fondo.
+                    Cerrar y abrir el editor no funcionara para removerlo.                
+                </p>
+                <br/>
+                <p>
+                    Desarrollada en Typescript Funciona editando directamente el CSS en "desktop.main.css" en los archivos de Visual Studio Code
+                </p>
                 `,
                 deployment: "https://marketplace.visualstudio.com/items?itemName=Woohaik.vscode-rickroll",
                 repository: "https://github.com/Woohaik/vscode-rickroll"
@@ -85,7 +102,13 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Reactjs", "Typescript", "S3", "Cloudfront"],
                 title: "Sort Algorithme Visualizer",
                 img: "sort-algo-visualizer.webp",
-                description: "hay bro",
+                description:
+                    `
+                    <p>
+                         Página web para visualizar animaciones del funcionamiento de los algoritmos de ordenación “Bubble”, 
+                         “Selection” e “Insertion” donde se puede variar la cantidad de elementos y cambiar su velocidad de animación.
+                    </p>
+                `,
                 deployment: "https://d2i3u80xnhzugk.cloudfront.net",
                 repository: "https://github.com/Woohaik/sort-visualize"
             },
@@ -94,7 +117,13 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Javascript", "SCSS", "JQuery", "S3", "Cloudfront"],
                 title: "Clon web residencia Uneatlantico",
                 img: "residencia-clone.webp",
-                description: "hay bro",
+                description:
+                    `
+                    <p>
+                        Clon de sitio web de residencia universitaria de uneatlantico. Fue hecho como un ejercicio de maquetación, interactividad y responsive usando javascript,
+                        jquery y CSS. Está hospedada en AWS usando S3 y cloudfront.
+                    </p>
+                `,
                 deployment: "https://d1yk06cdai7txo.cloudfront.net/",
                 repository: "https://github.com/Woohaik/Residencia"
             },
@@ -103,7 +132,23 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Javascript", "Nuxtjs", "i18n"],
                 title: "Tabla de Composición Nutricional",
                 img: "tabla-nutricional.webp",
-                description: "hay bro",
+                description:
+                    `
+                <p>
+                 Aplicación para consulta de  datos de composición nutricional de alimentos usando la base de datos internacional de composición de alimentos.
+                </p>
+                <br/>
+                <p>
+                Desarrollada en Colaboración con
+                    <a href="https://www.linkedin.com/in/cristian-camilo-rojas-cruz-b88593212/">Cristian Rojas</a>,
+                    <a href="https://www.linkedin.com/in/dar%C3%ADo-ruiz-di%C3%A9guez-492416230/">Dario Ruiz</a>
+                    y
+                    <a href="https://www.linkedin.com/in/kevin-acuna">Kevin Acuña</a>, 
+                    aplicación web desarrollada con Nuxtjs para aprovechar las capacidad del Renderizado desde el Servidor
+                    SSR es un cambio de imagen a la antigua aplicación de composición de alimentos de funiber cuenta
+                    Traducción dinámica  para 4 idiomas usando módulo de i18n.
+                </p>
+            `,
                 deployment: "https://composicionnutricional.com"
             },
             {
@@ -111,9 +156,14 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Typescript", "npm"],
                 title: "tbin-tree",
                 img: "npm-logo.webp",
-                description: `
-                    <img src="https://badgen.net/npm/dt/tbin-tree"/>
-                `,
+                description:
+                    `
+                    <img class="mb-2"  src="https://badgen.net/npm/dt/tbin-tree" />
+                    <p>
+                        Un módulo de npm compatible con typescript de un árbol binario con el cual se pueden añadir
+                         y remover nodos asignando contenido usando tipos genéricos y puede ser recorrido en “inorden“, “preorden” , “postorden”.
+                    </p>
+                    `,
                 deployment: "https://www.npmjs.com/package/tbin-tree",
                 repository: "https://github.com/Woohaik/bin-tree"
             },
@@ -122,7 +172,22 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Vuejs", "SCSS", "Route53", "S3", "Cloudfront", "Lambda"],
                 title: "Página web Colegio Bill Gates",
                 img: "bill-gates-school.webp",
-                description: "hay bro",
+                description:
+                    `
+                        <p>
+                            Página web para el colegio Bill Gates ubicado en 
+                            <a href="https://goo.gl/maps/eaZsznRekhm1FEYz8">"Metapan El Salvador"</a>.
+                            Proyecto llevado desde la fase de diseño, maquetación implementación hasta el despliegue y configuración DNS.
+                        </p>
+                        <br/>
+                        <p>
+                            Desarrollado en Vuejs actualmente desplegado en AWS usando S3 Cloudfront para su hospedaje Route53 para DNS y Certificarte manager para el certificado TLS
+                        </p>
+                        <br/>
+                        <p>
+                            Cuenta con despliegue e integración continua con github actions y un formulario de contacto implementado AWS Lambda con nodejs y Api Gateway. 
+                        </p>
+                `,
                 deployment: "https://djeo5ux2imymg.cloudfront.net"
             },
             {
@@ -130,8 +195,15 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Reactjs", "Typescript", "SCSS", "Tailwindcss"],
                 title: "Portafolio",
                 img: "portafolio.webp",
-                description: "hay bro",
-                deployment: "https://cantinalamexicana.es/nosotros/"
+                description:
+                    `
+                    <p>
+                        Portafolio personal desarrollado con react y typescript en el cual recopilar mi información,
+                         como curriculum, certificados, proyectos personales o colaboraciones con que tengan una URL pública.
+                    </p>
+                `,
+                deployment: "https://cantinalamexicana.es/nosotros/",
+                repository: "https://github.com/Woohaik/Portafolio"
             },
 
             {
@@ -139,7 +211,13 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Vuejs", "Javascript", "CSS", "HTML"],
                 title: "Juego de Memoria de Cartas",
                 img: "card-memory-game.webp",
-                description: "hay bro",
+                description:
+                    `
+                    <p>
+                        Juego básico de memoria de cartas desarrollado con HTML, CSS y Javascript vanilla, todas las animaciones y
+                        el tablero en perspectiva está hecho con CSS.
+                    </p>
+                 `,
                 deployment: "https://d1ozgsa565oy1f.cloudfront.net",
                 repository: "https://github.com/Woohaik/card-memory-game"
             },
@@ -149,17 +227,28 @@ export const eslocal: IPosibleLocals = {
                 technologies: ["Reactjs", "Typescript", "GitHubActions", "npm"],
                 title: "react-date-range-divider",
                 img: "npm-logo.webp",
-                description: `
-                    <img src="https://badgen.net/npm/dt/react-date-range-divider" />
-                `,
-                deployment: "https://www.npmjs.com/package/react-date-range-divider"
+                description:
+                    `
+                    <img class="mb-2"  src="https://badgen.net/npm/dt/react-date-range-divider" />
+                        <p>
+                            Módulo de npm para React compatible con typescript de un selector de intervalos de fechas
+                            a el cual se le proporcionan un intervalo (fecha inicio y fecha fin) y luego puede ser divididos en “n” intervalos en días.
+                        </p>
+                    `,
+                deployment: "https://www.npmjs.com/package/react-date-range-divider",
+                repository: "https://github.com/Woohaik/react-date-range-divider"
             },
             {
                 categories: ["Frontend"],
                 technologies: ["Vuejs", "Typescript", "Heroku", "SCSS"],
                 title: "Supra Kat",
                 img: "supra-kat.webp",
-                description: "hay bro",
+                description:
+                    `
+                <p>
+                    Single Web Application (SPA) de una galería de gatos con scroll infinito desarrollada en VUEjs consumiendo el <a href="https://thecatapi.com">api de gatos</a>
+                </p>
+            `,
                 deployment: "https://supra-kat.herokuapp.com",
                 repository: "https://github.com/Woohaik/supra-kat"
             }

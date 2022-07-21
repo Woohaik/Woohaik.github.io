@@ -5,7 +5,6 @@ import { POSIBLE_LOCALS } from "../utils/constants";
 import { IProject } from "../utils/types";
 import Modal from "./Modal";
 import ModalBody from "./ModalBody";
-
 interface IProps {
     project: IProject
 }
@@ -23,11 +22,13 @@ const Project: FC<IProps> = ({ project }) => {
                     <div className="px-2 pt-3 pb-2 text-[20px] text-center font-medium">
                         {project.title}
                     </div>
-                    <div className="flex gap-2 pb-2 justify-center text-primary dark:text-gray-200  font-medium">
+                    <div className="flex gap-2 justify-center text-primary dark:text-gray-200  font-medium">
                         {project.technologies.map(tech => <div key={`${project.title}-${tech}`}>{tech}</div>)}
                     </div>
-                    <p dangerouslySetInnerHTML={{ __html: project.description }} />
-                    <div className="flex flex-col gap-2">
+
+                    <p className="my-5 project-description" dangerouslySetInnerHTML={{ __html: project.description }} />
+
+                    <div className="flex gap-2">
                         <a href={project.deployment} rel="noreferrer" target="_blank" className="bg-primary   w-fit flex justify-center  place-items-center gap-2 dark:bg-bg-dark    hover:bg-blue-600  dark:hover:bg-slate-500 text-white font-bold py-2 px-4 rounded">
                             {t(POSIBLE_LOCALS.projectsView.deploy)} <FaEye className="h-5 w-5 bigger-on-hover" />
                         </a>

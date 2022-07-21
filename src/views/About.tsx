@@ -94,7 +94,7 @@ const AboutView = () => {
 
                 </div>
                 <CardSubTitle icon={<FaAddressBook />} html={t(POSIBLE_LOCALS.aboutView.contact)} />
-                <div className="flex gap-6 lg:flex-row sm:flex-col">
+                <div className="flex gap-6 lg:flex-row sm:flex-col flex-col">
                     <div className="flex-1">
                         <ColorSquare
                             title={"Email"}

@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import me from "./../../assets/me.webp";
+import me from "assets/me.webp";
 import { FaGithub, FaStackOverflow, FaLinkedinIn } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { POSIBLE_LOCALS } from "../../utils/constants";
-import { ResponsiveOptions } from "../../utils/types";
-import { getResponsiveSize } from "../../utils/functions";
-import useMediaQuery from "../../utils/hooks/useMediaQuery";
+import { POSIBLE_LOCALS } from "utils/constants";
+import { ResponsiveOptions } from "utils/types";
+import { getResponsiveSize } from "utils/functions";
+import useMediaQuery from "utils/hooks/useMediaQuery";
 
 const Body = () => {
     const location = useLocation();

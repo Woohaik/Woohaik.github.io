@@ -1,4 +1,4 @@
-import { IPosibleLocals } from "../utils/types";
+import { IPosibleLocals } from "utils/types";
 
 export const frlocal: IPosibleLocals = {
     locale: "fr-FR",

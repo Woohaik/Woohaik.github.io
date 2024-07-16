@@ -1,8 +1,8 @@
 import React, { FC, ReactNode } from "react";
 import { motion } from "framer-motion";
-import useMediaQuery from "../../utils/hooks/useMediaQuery";
-import { ResponsiveOptions } from "../../utils/types";
-import { getResponsiveSize } from "../../utils/functions";
+import useMediaQuery from "utils/hooks/useMediaQuery";
+import { ResponsiveOptions } from "utils/types";
+import { getResponsiveSize } from "utils/functions";
 
 interface IProps {
     children?: ReactNode;

@@ -1,26 +1,25 @@
 import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import Card from "../components/Card/Card";
-import CardBody from "../components/Card/CardBody";
-import CardSubTitle from "../components/Card/CardSubTitle";
-import CardTitle from "../components/Card/CardTitle";
-import CertificationCard from "../components/CertificationCard";
-import { MY_CERTIFICATIONS, MY_EMAIL, MY_PHONE_NUMBER, POSIBLE_LOCALS } from "../utils/constants";
-import { capitalizeText } from "../utils/functions";
-import logoUneat from "./../assets/logo_uneatlantico.svg";
+import Card from "components/Card/Card";
+import CardBody from "components/Card/CardBody";
+import CardSubTitle from "components/Card/CardSubTitle";
+import CardTitle from "components/Card/CardTitle";
+import CertificationCard from "components/CertificationCard";
+import { MY_BIRTH_DATE_DATE_STRING, MY_CERTIFICATIONS, MY_EMAIL, MY_PHONE_NUMBER, POSIBLE_LOCALS } from "utils/constants";
+import { capitalizeText, getAge } from "utils/functions";
+import logoUneat from "assets/logo_uneatlantico.svg";
 import { FaGlobe, FaUserGraduate, FaCertificate, FaAddressBook } from "react-icons/fa";
-import LanguageLevel from "../components/LanguageLevel";
+import LanguageLevel from "components/LanguageLevel";
 import { FR, ES, GB } from "country-flag-icons/react/3x2";
-import ColorSquare from "../components/ColorSquare";
+import ColorSquare from "components/ColorSquare";
 
 const AboutView = () => {
     const { t } = useTranslation("translation", { keyPrefix: "aboutView" });
     const { t: baseT } = useTranslation();
     const { t: aboutAnswersT } = useTranslation("translation", { keyPrefix: "aboutView.aboutAnswers" });
     const age = useMemo(() => {
-        const date = new Date("November 12, 1998");
-        const timeDiff = Math.abs(Date.now() - date.getTime());
-        return Math.floor((timeDiff / (1000 * 3600 * 24)) / 365.25);
+        const date = new Date(MY_BIRTH_DATE_DATE_STRING);
+        return getAge(date);
     }, []);
 
     const universityRange: string = useMemo(() => {

@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Card from "../components/Card/Card";
-import CardBody from "../components/Card/CardBody";
-import CardTitle from "../components/Card/CardTitle";
-import Experience from "../components/Experience";
-import { IExperience } from "../utils/types";
+import Card from "components/Card/Card";
+import CardBody from "components/Card/CardBody";
+import CardTitle from "components/Card/CardTitle";
+import Experience from "components/Experience";
+import { IExperience } from "utils/types";
 
 const ResumeView = () => {
     const { t } = useTranslation("translation", { keyPrefix: "resumeView" });

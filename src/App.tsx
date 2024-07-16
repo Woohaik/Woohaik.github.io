@@ -1,11 +1,14 @@
 import React from "react";
-import Layout from "./components/Layout";
+import Layout from "./components/_Layout";
+import Routes from "./Routes";
+import "./styles/styles.scss";
+import "./config/i18n";
 
 const App: React.FC = () => {
     return (
-        <div className='lg:flex sm:block place-items-center justify-center h-[100vh] dark:text-white' id="app">
-            <Layout />
-        </div>
+        <Layout>
+            <Routes />
+        </Layout>
     );
 };
 

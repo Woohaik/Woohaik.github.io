@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-import { IExperience, ResponsiveOptions } from "../utils/types";
+import { IExperience, ResponsiveOptions } from "utils/types";
 import Datedif from "date-diff";
 import { useTranslation } from "react-i18next";
-import { POSIBLE_LOCALS } from "../utils/constants";
-import { capitalizeText, getResponsiveSize } from "../utils/functions";
-import useMediaQuery from "../utils/hooks/useMediaQuery";
+import { POSIBLE_LOCALS } from "utils/constants";
+import { capitalizeText, getResponsiveSize } from "utils/functions";
+import useMediaQuery from "utils/hooks/useMediaQuery";
 
 interface IProps {
     experience: IExperience
@@ -53,7 +53,7 @@ const Experience: FC<IProps> = (props) => {
 
                     }
                 </div>
-                <img className="ml-auto lg:h-[100px] lg:ml-auto lg:mr-0 sm:mx-auto mx-auto sm:h-[85px] h-[85px] mt-2" src={require(`./../assets/${props.experience.place.logoUrl}`)} alt={`${props.experience.place.name} - logo`} />
+                <img className="ml-auto lg:h-[100px] lg:ml-auto lg:mr-0 sm:mx-auto mx-auto sm:h-[85px] h-[85px] mt-2" src={require(`assets/${props.experience.place.logoUrl}`)} alt={`${props.experience.place.name} - logo`} />
             </div>
             {/* lg:after:block  sm:after:hidden  lg:before:block  sm:before:hidden */}
             <div className="experience__timeline relative  flex flex-col gap-5 flex-1">

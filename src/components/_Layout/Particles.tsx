@@ -1,11 +1,11 @@
 import React, { FC } from "react";
-import Particles from "react-tsparticles";
+import TsParticles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { getResponsiveSize } from "../utils/functions";
-import useMediaQuery from "../utils/hooks/useMediaQuery";
-import { ResponsiveOptions } from "../utils/types";
+import { getResponsiveSize } from "utils/functions";
+import useMediaQuery from "utils/hooks/useMediaQuery";
+import { ResponsiveOptions } from "utils/types";
 
-const BGParticles: FC = () => {
+const Particles: FC = () => {
     const mediaQuerySize = useMediaQuery();
 
     const responsiveDisplay: ResponsiveOptions = {
@@ -21,7 +21,7 @@ const BGParticles: FC = () => {
     };
 
     return (
-        <Particles
+        <TsParticles
             style={{
                 display: getResponsiveSize(mediaQuerySize, responsiveDisplay) as "block" | "none"
             }}
@@ -34,7 +34,7 @@ const BGParticles: FC = () => {
                         value: "transparent"
                     }
                 },
-                fpsLimit: 144,
+                fpsLimit: 60,
                 interactivity: {
                     events: {
                         resize: true
@@ -61,7 +61,7 @@ const BGParticles: FC = () => {
                             default: "bounce"
                         },
                         random: false,
-                        speed: 2,
+                        speed: 1,
                         straight: false
                     },
                     zIndex: {
@@ -70,9 +70,9 @@ const BGParticles: FC = () => {
                     number: {
                         density: {
                             enable: true,
-                            area: 1000
+                            area: 800
                         },
-                        value: 50
+                        value: 40
                     },
                     opacity: {
                         value: 0.5
@@ -89,4 +89,4 @@ const BGParticles: FC = () => {
     );
 };
 
-export default BGParticles;
+export default Particles;

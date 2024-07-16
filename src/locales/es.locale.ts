@@ -1,4 +1,4 @@
-import { IPosibleLocals } from "../utils/types";
+import { IPosibleLocals } from "utils/types";
 
 export const eslocal: IPosibleLocals = {
     locale: "es-ES",

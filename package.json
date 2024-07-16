@@ -1,6 +1,6 @@
 {
   "name": "portafolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Portafolio personal desarrollado con react y typescript en el cual recopilar mi información, como curriculum, certificados, proyectos personales o colaboraciones con que tengan una URL pública.",
   "homepage": "https://Woohaik.github.io",
   "private": false,

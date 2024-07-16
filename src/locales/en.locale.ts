@@ -205,7 +205,7 @@ export const enlocal: IPosibleLocals = {
 
             {
                 categories: ["Frontend"],
-                technologies: ["Vuejs", "Javascript", "CSS", "HTML"],
+                technologies: ["Javascript", "CSS", "HTML"],
                 title: "Card Memory Game",
                 img: "card-memory-game.webp",
                 description:
@@ -257,7 +257,7 @@ export const enlocal: IPosibleLocals = {
             {
                 place: {
                     name: "EUROPEAN UNIVERSITY OF THE ATLANTIC",
-                    logoUrl: "logo_uneatlantico.svg"
+                    logoUrl: "logo_funiber.jpeg"
                 },
                 roles: [
                     {

@@ -211,7 +211,7 @@ export const frlocal: IPosibleLocals = {
 
             {
                 categories: ["Frontend"],
-                technologies: ["Vuejs", "Javascript", "CSS", "HTML"],
+                technologies: ["Javascript", "CSS", "HTML"],
                 title: "Jeu de mémoire de cartes",
                 img: "card-memory-game.webp",
                 description:
@@ -265,7 +265,7 @@ export const frlocal: IPosibleLocals = {
             {
                 place: {
                     name: "UNIVERSITÉ EUROPÉENNE DE L'ATLANTIQUE",
-                    logoUrl: "logo_uneatlantico.svg"
+                    logoUrl: "logo_funiber.jpeg"
                 },
                 roles: [
                     {

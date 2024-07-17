@@ -20,10 +20,7 @@ const Routes = () => {
                 <Route path="/about" element={<AboutView />} />
                 <Route path="/resume" element={<ResumeView />} />
                 <Route path="/projects" element={<ProjectsView />} />
-                <Route
-                    path="*"
-                    element={<Navigate to="/about" replace />}
-                />
+                <Route path="*" element={<Navigate to="/about" replace />} />
             </RouterRoutes>
         </AnimatePresence>
     );

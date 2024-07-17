@@ -5,8 +5,8 @@ import CardBody from "components/Card/CardBody";
 import CardSubTitle from "components/Card/CardSubTitle";
 import CardTitle from "components/Card/CardTitle";
 import CertificationCard from "components/CertificationCard";
-import { MY_BIRTH_DATE_DATE_STRING, MY_CERTIFICATIONS, MY_EMAIL, MY_PHONE_NUMBER, POSIBLE_LOCALS } from "utils/constants";
-import { capitalizeText, getAge } from "utils/functions";
+import { MY_CERTIFICATIONS, MY_EMAIL, MY_PHONE_NUMBER, POSIBLE_LOCALS } from "utils/constants";
+import { capitalizeText } from "utils/functions";
 import logoUneat from "assets/logo_uneatlantico.svg";
 import { FaGlobe, FaUserGraduate, FaCertificate, FaAddressBook } from "react-icons/fa";
 import LanguageLevel from "components/LanguageLevel";
@@ -17,10 +17,6 @@ const AboutView = () => {
     const { t } = useTranslation("translation", { keyPrefix: "aboutView" });
     const { t: baseT } = useTranslation();
     const { t: aboutAnswersT } = useTranslation("translation", { keyPrefix: "aboutView.aboutAnswers" });
-    const age = useMemo(() => {
-        const date = new Date(MY_BIRTH_DATE_DATE_STRING);
-        return getAge(date);
-    }, []);
 
     const universityRange: string = useMemo(() => {
         const startedUniversity = capitalizeText((new Date("September 1, 2018").toLocaleDateString(baseT(POSIBLE_LOCALS.locale), { year: "numeric", month: "long" })));
@@ -35,7 +31,6 @@ const AboutView = () => {
                 <div className="flex gap-4 mb-3 lg:flex-row sm:flex-col flex-col ">
                     <div className="flex-1 text-justify" dangerouslySetInnerHTML={{ __html: t(POSIBLE_LOCALS.aboutView.description) }} />
                     <div style={{ flex: "0 1 250px" }}>
-                        <ColorSquare text={age + ""} title={t(POSIBLE_LOCALS.aboutView.age)} />
                         <ColorSquare
                             text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.degree)}
                             title={t(POSIBLE_LOCALS.aboutView.degree)}

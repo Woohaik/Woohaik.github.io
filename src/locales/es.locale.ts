@@ -46,12 +46,11 @@ export const eslocal: IPosibleLocals = {
             coffee: "Si"
         },
         university: "UNIVERSIDAD EUROPEA DEL ATLÁNTICO",
-        age: "Edad",
         degree: "Titulación",
         nationality: "Nacionalidad",
         residence: "Residencia",
         movility: "Movilidad",
-        coffee: "Café",
+        coffee: "Café ☕",
         certificationSubTitle: "Certificaciones",
         phone: "Móvil",
         educationSubTitle: "Educación",

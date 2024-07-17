@@ -10,7 +10,6 @@ export const PROJECTS_CATEGORIES = ["All", "Frontend", "Vscode", "npm"] as const
 
 export const MY_EMAIL = "wilfredo.hernandez.ar@gmail.com";
 export const MY_PHONE_NUMBER = "+34 656 374 207";
-export const MY_BIRTH_DATE_DATE_STRING = "November 12, 1998";
 
 export const POSIBLE_LOCALS = {
     locale: "locale",
@@ -38,7 +37,6 @@ export const POSIBLE_LOCALS = {
             coffee: "coffee"
         },
         university: "university",
-        age: "age",
         nationality: "nationality",
         residence: "residence",
         movility: "movility",

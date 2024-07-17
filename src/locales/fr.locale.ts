@@ -42,14 +42,13 @@ export const frlocal: IPosibleLocals = {
             movility: "Disponible",
             coffee: "Oui"
         },
-        age: "Âge",
         university: "UNIVERSITÉ EUROPÉENNE DE L'ATLANTIQUE",
         degree: "Diplôme",
         nationality: "Nationalité",
         residence: "Résidence",
         movility: "Mobilité",
         phone: "Portable",
-        coffee: "Café",
+        coffee: "Café ☕",
         certificationSubTitle: "Certifications",
         educationSubTitle: "Éducation",
         languagesSubTitle: "Langues"

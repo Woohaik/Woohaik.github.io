@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import { getResponsiveSize } from "../utils/functions";
-import useMediaQuery from "../utils/hooks/useMediaQuery";
-import { ResponsiveOptions } from "../utils/types";
+import { getResponsiveSize } from "utils/functions";
+import useMediaQuery from "utils/hooks/useMediaQuery";
+import { ResponsiveOptions } from "utils/types";
 
 interface IProps {
     imageUrl: string,

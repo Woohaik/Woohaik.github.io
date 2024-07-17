@@ -1,4 +1,4 @@
-import { IPosibleLocals } from "../utils/types";
+import { IPosibleLocals } from "utils/types";
 
 export const enlocal: IPosibleLocals = {
     locale: "en-US",
@@ -21,17 +21,12 @@ export const enlocal: IPosibleLocals = {
         description:
             `
             <p>
-                Passionate about new technologies with experience
-                building full-stack web applications, designing
-                cloud architectures, microservices, working with
-                containers and serverless technologies.
-                Experience working with SCRUM and KANBAN methodologies.
+Passionate about new technologies, with experience building full-stack web applications (Node/React), designing cloud application architectures and microservices, working with containers and serverless technologies. 
+
             <p/>
             <br/>
             <p>
-                Autonomy, teamwork and adaptation to change,
-                looking for new challenges,  learning and continuous improvement, 
-                special interest focused on increasing cloud skills and knowledge.
+I work with autonomy and adaptation to change, I am looking for new challenges with learning and continuous improvement, special interest in pursuing my career as a Cloud developer.
             <p/>
         `,
         aboutAnswers: {
@@ -41,13 +36,12 @@ export const enlocal: IPosibleLocals = {
             movility: "Available ",
             coffee: "Yes"
         },
-        age: "Age",
         university: "EUROPEAN UNIVERSITY OF THE ATLANTIC",
         degree: "Degree",
         nationality: "Nationality",
         residence: "Residence",
         movility: "Movility",
-        coffee: "Coffee",
+        coffee: "Coffee  ☕",
         phone: "Phone",
         certificationSubTitle: "Certifications",
         educationSubTitle: "Education",
@@ -205,7 +199,7 @@ export const enlocal: IPosibleLocals = {
 
             {
                 categories: ["Frontend"],
-                technologies: ["Vuejs", "Javascript", "CSS", "HTML"],
+                technologies: ["Javascript", "CSS", "HTML"],
                 title: "Card Memory Game",
                 img: "card-memory-game.webp",
                 description:
@@ -233,21 +227,6 @@ export const enlocal: IPosibleLocals = {
                     `,
                 deployment: "https://www.npmjs.com/package/react-date-range-divider",
                 repository: "https://github.com/Woohaik/react-date-range-divider"
-            },
-            {
-                categories: ["Frontend"],
-                technologies: ["Vuejs", "Typescript", "Heroku", "SCSS"],
-                title: "Supra Kat",
-                img: "supra-kat.webp",
-                description:
-                    `
-                <p>
-                    Single Web Application (SPA) of a cat gallery with infinite scroll developed in VUEjs 
-                    consuming the <a href="https://thecatapi.com">Cat API</a>.
-                </p>
-                `,
-                deployment: "https://supra-kat.herokuapp.com",
-                repository: "https://github.com/Woohaik/supra-kat"
             }
         ]
     },
@@ -256,8 +235,8 @@ export const enlocal: IPosibleLocals = {
         places: [
             {
                 place: {
-                    name: "EUROPEAN UNIVERSITY OF THE ATLANTIC",
-                    logoUrl: "logo_uneatlantico.svg"
+                    name: "Sopra Steria",
+                    logoUrl: "logo_soprasteria.jpeg"
                 },
                 roles: [
                     {
@@ -265,32 +244,63 @@ export const enlocal: IPosibleLocals = {
                             `
                             <ul>
                                 <li>
-                                    Analysis and development of web components and SPA.
+ Development of new modules and maintenance in apps with React, Typescript, Redux, ChakraUI.
                                 </li>
                                 <li>
-                                    Analysis, Design and development of REST APIs with Node.js.
+         Maintenance and new functionalities and components for UI component library with React and Storybook based on ChakraUI.
                                 </li>
                                 <li>
-                                    Architecture design for web projects and cloud native microservices.
+Testing with react-testing-library and Mock Service Worker
+
                                 </li>
                                 <li>
-                                    Application containerization and development environments with Docker and Docker Compose
-                                </li>
-                                <li>
-                                    Task automation.
+ Code review and new features estimations
+
                                 </li>
                             </ul>`,
-                        period: ["December 1, 2019", "now"], // from december to nowadays
+                        period: ["April 1, 2023", "now"], // from december to nowadays
+                        role: "Senior Frontend Developer Analyst",
+                        technologies: ["React", "Typescript", "Redux", "react-query", "Jest", "Docker"]
+                    }
+                ]
+            },
+            {
+                place: {
+                    name: "Iberoamerican University Foundation (FUNIBER)",
+                    logoUrl: "logo_funiber.jpeg"
+                },
+                roles: [
+                    {
+                        description:
+                            `
+                            <ul>
+                                <li>
+   Analysis and development of components inReactjs and Vuejs.
+                                </li>
+                                <li>
+                     Analysis, design and development of REST APIs with Node.js, expressjs and serverless Cloud Functions. 
+                                </li>
+                                <li>
+                        Architecture design of web projects and cloud native microservices.
+                                </li>
+                                <li>
+Task automation with scripts
+                                </li>
+                                <li>
+                            Application containerization and development environments with Docker and Docker Compose.
+
+                                </li>
+                            </ul>`,
+                        period: ["December 1, 2019", "July 31, 2022"], // from december to nowadays
                         role: "Web Developer",
-                        technologies: ["Reactjs", "Typescript", "Vuejs", "AWS", "Nuxt", "Docker", "GCP"]
+                        technologies: ["Reactjs", "Typescript", "Vuejs", "AWS", "Express", "Docker", "GCP"]
                     },
                     {
                         description:
                             `
                             <ul>
                                 <li>
-                                    Built components and web pages from prototypes,
-                                    application of responsive styles and interactivity.
+               Built components and web pages from prototypes, application of responsive styles and interactivity.
                                 </li>
                             </ul>
                         `,

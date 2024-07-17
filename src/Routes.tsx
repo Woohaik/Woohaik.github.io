@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { Route, Navigate, useLocation, Routes } from "react-router-dom";
-import AboutView from "../views/About";
-import ResumeView from "../views/Resume";
+import { Route, Navigate, useLocation, Routes as RouterRoutes } from "react-router-dom";
+import AboutView from "./views/About";
+import ResumeView from "./views/Resume";
 import { AnimatePresence } from "framer-motion";
-import ProjectsView from "../views/Projects";
+import ProjectsView from "./views/Projects";
 
-const AnimatedRoutes = () => {
+const Routes = () => {
     const location = useLocation();
 
     useEffect(() => {
@@ -16,17 +16,14 @@ const AnimatedRoutes = () => {
 
     return (
         <AnimatePresence>
-            <Routes location={location} key={location.pathname}>
+            <RouterRoutes location={location} key={location.pathname}>
                 <Route path="/about" element={<AboutView />} />
                 <Route path="/resume" element={<ResumeView />} />
                 <Route path="/projects" element={<ProjectsView />} />
-                <Route
-                    path="*"
-                    element={<Navigate to="/about" replace />}
-                />
-            </Routes>
+                <Route path="*" element={<Navigate to="/about" replace />} />
+            </RouterRoutes>
         </AnimatePresence>
     );
 };
 
-export default AnimatedRoutes;
+export default Routes;

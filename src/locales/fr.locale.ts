@@ -1,4 +1,4 @@
-import { IPosibleLocals } from "../utils/types";
+import { IPosibleLocals } from "utils/types";
 
 export const frlocal: IPosibleLocals = {
     locale: "fr-FR",
@@ -20,19 +20,11 @@ export const frlocal: IPosibleLocals = {
         description:
             `
             <p>
-                Passionné par les nouvelles technologies, expérience
-                dans la construction d'applications web full-stack,
-                conception d'architectures cloud, microservices,
-                travail avec des conteneurs et des technologies serverless.
-                Expérience de travail avec les méthodologies SCRUM et KANBAN.
+Passionné par les nouvelles technologies, avec expérience dans la création d'applications web full-stack (Node/React), la conception d'architectures d'applications cloud et de microservices, le travail avec des Docker Containers et des technologies serverless. 
             <p>
             <br/>
             </p>
-                Autonomie, travail en équipe et adaptation au changement,
-                recherche de nouveaux défis, résolution de problèmes,
-                apprentissage et amélioration continue, intérêt particulier
-                porté à l'accroissement des connaissances et des compétences
-                en matière de cloud.
+Je travaille avec autonomie et adaptation au changement, je suis à la recherche de nouveaux défis avec apprentissage et amélioration constante, intérêt particulier pour poursuivre ma carrière en tant que développeur Cloud.
             </p>
         `,
         aboutAnswers: {
@@ -42,14 +34,13 @@ export const frlocal: IPosibleLocals = {
             movility: "Disponible",
             coffee: "Oui"
         },
-        age: "Âge",
         university: "UNIVERSITÉ EUROPÉENNE DE L'ATLANTIQUE",
         degree: "Diplôme",
         nationality: "Nationalité",
         residence: "Résidence",
         movility: "Mobilité",
         phone: "Portable",
-        coffee: "Café",
+        coffee: "Café ☕",
         certificationSubTitle: "Certifications",
         educationSubTitle: "Éducation",
         languagesSubTitle: "Langues"
@@ -211,7 +202,7 @@ export const frlocal: IPosibleLocals = {
 
             {
                 categories: ["Frontend"],
-                technologies: ["Vuejs", "Javascript", "CSS", "HTML"],
+                technologies: ["Javascript", "CSS", "HTML"],
                 title: "Jeu de mémoire de cartes",
                 img: "card-memory-game.webp",
                 description:
@@ -241,31 +232,45 @@ export const frlocal: IPosibleLocals = {
                     `,
                 deployment: "https://www.npmjs.com/package/react-date-range-divider",
                 repository: "https://github.com/Woohaik/react-date-range-divider"
-            },
-            {
-                categories: ["Frontend"],
-                technologies: ["Vuejs", "Typescript", "Heroku", "SCSS"],
-                title: "Supra Kat",
-                img: "supra-kat.webp",
-                description:
-                    `
-                    <p>
-                        Application Web unique (SPA) d'une galerie de chats avec scroll infini développée en Vuejs
-                        consommant <a href="https://thecatapi.com">l'API des chats</a> .  
-                    </p>
-                `,
-                deployment: "https://supra-kat.herokuapp.com",
-                repository: "https://github.com/Woohaik/supra-kat"
             }
         ]
     },
     resumeView: {
         title: "<span class='text-primary dark:text-lightText'> Mon</span> Expérience",
         places: [
+
             {
                 place: {
-                    name: "UNIVERSITÉ EUROPÉENNE DE L'ATLANTIQUE",
-                    logoUrl: "logo_uneatlantico.svg"
+                    name: "Sopra Steria",
+                    logoUrl: "logo_soprasteria.jpeg"
+                },
+                roles: [
+                    {
+                        description:
+                            `
+                            <ul>
+                                <li>
+                                   Développement de nouveaux modules et maintenance dans les applications avec React, Typescript, Redux et ChakraUI.
+                                </li>
+                                <li>
+                                   Maintenance et nouvelles fonctionnalités pour la bibliothèque de composants UI avec React et Storybook basé sur ChakraUI.                                </li>
+                                <li>
+                                   Tests avec react-testing-library et Mock Service Worker
+                                </li>
+                                <li>
+                                   Revue de code, estimation des nouvelles fonctionnalités
+                                </li>
+                            </ul>`,
+                        period: ["April 1, 2023", "now"], // from december to nowadays
+                        role: "Senior Frontend Developer Analyst",
+                        technologies: ["React", "Typescript", "Redux", "react-query", "Jest", "Docker"]
+                    }
+                ]
+            },
+            {
+                place: {
+                    name: "Fondation universitaire ibéroaméricaine (FUNIBER)",
+                    logoUrl: "logo_funiber.jpeg"
                 },
                 roles: [
                     {
@@ -273,34 +278,32 @@ export const frlocal: IPosibleLocals = {
                             `
                                 <ul>
                                     <li>
-                                        Analyse et développement de composants web et SPA en reactjs et vuejs.
+                                       Analyse et développement d'applications en Reactjs et Vuejs
                                     </li>
                                     <li>
-                                        Analyse, conception et développement d'APIs REST avec Node.js
+                                       Analyse, conception et développement d'API REST avec Node.js, Express et serverless Cloud Functions. 
                                     </li>
                                     <li>
-                                        Conception de l'architecture de projets web et de microservices natifs du cloud.
+                                       Conception de l'architecture de projets web et de microservices natifs du cloud.
                                     </li>
                                     <li>
-                                        Automatisation des tâches.
+                                      Automatisation des tâches avec scripts.
                                     </li>
                                     <li>
-                                        Conteneurisation des applications et environnements de développement avec Docker et Docker Compose.
+                                     Conteneurisation d'applications et environnements de développement avec Docker et Docker Compose.
                                     </li>
                                 </ul>
                             `,
-                        period: ["December 1, 2019", "now"], // from december to nowadays
+                        period: ["December 1, 2019", "July 31, 2022"], // from december to nowadays
                         role: "Développeur Web",
-                        technologies: ["Reactjs", "Typescript", "Vuejs", "AWS", "Nuxt", "Docker", "GCP"]
+                        technologies: ["Reactjs", "Typescript", "Vuejs", "AWS", "Express", "Docker", "GCP"]
                     },
                     {
                         description:
                             `
                                 <ul>
                                     <li>
-                                        Création d'éléments et de pages Web à partir de prototypes,
-                                        application de styles à partir de prototypes, application de styles
-                                        réactifs et l'interactivité.
+                                     Création d'éléments et de pages Web, styles et l'interactivité à partir de prototypes.
                                     </li>
                                 </ul>
                             `,

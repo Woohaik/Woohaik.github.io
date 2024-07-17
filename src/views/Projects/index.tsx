@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import AnimatedGrid from "../components/AnimatedGrid";
-import Card from "../components/Card/Card";
-import CardBody from "../components/Card/CardBody";
-import CardTitle from "../components/Card/CardTitle";
-import Project from "../components/Project";
-import { POSIBLE_LOCALS, PROJECTS_CATEGORIES } from "../utils/constants";
-import { getResponsiveSize } from "../utils/functions";
-import useMediaQuery from "../utils/hooks/useMediaQuery";
-import { IProject, PROJECTS_CATEGORIES_TYPES, ResponsiveOptions } from "../utils/types";
+import AnimatedGrid from "components/AnimatedGrid";
+import Card from "components/Card/Card";
+import CardBody from "components/Card/CardBody";
+import CardTitle from "components/Card/CardTitle";
+import Project from "components/Project";
+import { POSIBLE_LOCALS, PROJECTS_CATEGORIES } from "utils/constants";
+import { getResponsiveSize } from "utils/functions";
+import useMediaQuery from "utils/hooks/useMediaQuery";
+import { IProject, PROJECTS_CATEGORIES_TYPES, ResponsiveOptions } from "utils/types";
 
 const ProjectsView = () => {
     const { t } = useTranslation("translation", { keyPrefix: "projectsView" });
@@ -49,8 +49,6 @@ const ProjectsView = () => {
             <CardBody>
                 <AnimatedGrid
                     conditionToShow={(t("projects", { returnObjects: true }) as IProject[]).map(project => selectedCategory === "All" || project.categories.some(category => category === selectedCategory))}
-                    gap={15}
-                    animationDuration={0.5}
                     columns={getResponsiveSize(mediaQuerySize, responsiveGrid) as number}
                     itemHeight={242}
                 >

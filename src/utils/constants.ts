@@ -37,7 +37,6 @@ export const POSIBLE_LOCALS = {
             coffee: "coffee"
         },
         university: "university",
-        age: "age",
         nationality: "nationality",
         residence: "residence",
         movility: "movility",

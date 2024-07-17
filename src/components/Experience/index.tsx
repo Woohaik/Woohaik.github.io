@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-import { IExperience, ResponsiveOptions } from "../utils/types";
+import { IExperience, ResponsiveOptions } from "utils/types";
 import Datedif from "date-diff";
 import { useTranslation } from "react-i18next";
-import { POSIBLE_LOCALS } from "../utils/constants";
-import { capitalizeText, getResponsiveSize } from "../utils/functions";
-import useMediaQuery from "../utils/hooks/useMediaQuery";
+import { POSIBLE_LOCALS } from "utils/constants";
+import { capitalizeText, getResponsiveSize } from "utils/functions";
+import useMediaQuery from "utils/hooks/useMediaQuery";
 
 interface IProps {
     experience: IExperience
@@ -47,20 +47,20 @@ const Experience: FC<IProps> = (props) => {
             <div style={{
                 flex: `${getResponsiveSize(mediaQuerySize, responsiveFlexSize)}`
             }} className="experience__company sm:text-center text-center lg:text-right">
-                <div className="text-[16px] font-medium">
+                <div className="text-[16px] font-semibold">
                     {
                         props.experience.place.name
 
                     }
                 </div>
-                <img className="ml-auto lg:h-[100px] lg:ml-auto lg:mr-0 sm:mx-auto mx-auto sm:h-[85px] h-[85px] mt-2" src={require(`./../assets/${props.experience.place.logoUrl}`)} alt={`${props.experience.place.name} - logo`} />
+                <img className="ml-auto lg:h-[100px] lg:ml-auto lg:mr-0 sm:mx-auto mx-auto sm:h-[85px] h-[85px] mt-2" src={require(`assets/${props.experience.place.logoUrl}`)} alt={`${props.experience.place.name} - logo`} />
             </div>
             {/* lg:after:block  sm:after:hidden  lg:before:block  sm:before:hidden */}
             <div className="experience__timeline relative  flex flex-col gap-5 flex-1">
                 {
                     props.experience.roles.map(role =>
                         <div className="experience__timeline__item  relative" key={role.role + props.experience.place.name}>
-                            <div className="experience__timeline__item__title relative text-[16px] font-medium">
+                            <div className="experience__timeline__item__title relative text-[16px] font-semibold">
                                 {role.role}
                             </div>
                             <div className="text-[14px] mt-1 dark:text-primary-dark">
@@ -69,7 +69,7 @@ const Experience: FC<IProps> = (props) => {
                                 }
                             </div>
                             <div className="text-[14px] mt-1" dangerouslySetInnerHTML={{ __html: role.description }} />
-                            <div className="text-[13px] font-medium text-primary mt-1 dark:text-primary-dark">
+                            <div className="text-[13px] font-semibold text-primary mt-1 dark:text-primary-dark">
                                 <span className="text-dark dark:text-white">
                                     {t(POSIBLE_LOCALS.techs)}:&nbsp;
                                 </span>

@@ -12,7 +12,7 @@ const LanguageLevel: FC<IProps> = (props) => {
     return (
         <div className="language-level flex gap-3" style={{ perspective: "600px" }}>
             {
-                <props.flag height={18} />
+                <props.flag height={18} style={{ border: "1px solid black" }} />
             }
             {
                 levelArr.map((_, index) =>

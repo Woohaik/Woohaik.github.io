@@ -20,22 +20,11 @@ export const eslocal: IPosibleLocals = {
         description:
             `
             <p>
-                Apasionado de las nuevas tecnologías
-                con experiencia construyendo
-                aplicación web full-stack, diseñando
-                arquitecturas cloud, microservicios,
-                trabajo con contenedores y tecnologias
-                serverless. Experiencia trabajando con
-                metodologías SCRUM y KANBAN.
+                Apasionado de las nuevas tecnologías con experiencia construyendo aplicación web full-stack (Node/React), diseñando arquitecturas de aplicaciones cloud y microservicios, trabajo con contenedores y tecnologias  serverless.
             </p>
             <br/>
             <p>
-                Autonomía, trabajo en equipo y
-                adaptación al cambio, en busca de
-                nuevos retos, resolución de problemas,
-                aprendizaje y mejora continua, especial
-                interés enfocado a incremento de
-                conocimientos y habilidades cloud.
+            Trabajo con Autonomía y adaptación al cambio, Busco nuevos retos con aprendizaje y mejora continua, especial interés  en seguir mi carrera como desarrollador Cloud.
             </p>
         `,
         aboutAnswers: {
@@ -236,20 +225,6 @@ export const eslocal: IPosibleLocals = {
                     `,
                 deployment: "https://www.npmjs.com/package/react-date-range-divider",
                 repository: "https://github.com/Woohaik/react-date-range-divider"
-            },
-            {
-                categories: ["Frontend"],
-                technologies: ["Vuejs", "Typescript", "Heroku", "SCSS"],
-                title: "Supra Kat",
-                img: "supra-kat.webp",
-                description:
-                    `
-                <p>
-                    Single Web Application (SPA) de una galería de gatos con scroll infinito desarrollada en VUEjs consumiendo el <a href="https://thecatapi.com">API de gatos</a>
-                </p>
-            `,
-                deployment: "https://supra-kat.herokuapp.com",
-                repository: "https://github.com/Woohaik/supra-kat"
             }
         ]
     },
@@ -258,7 +233,7 @@ export const eslocal: IPosibleLocals = {
         places: [
             {
                 place: {
-                    name: "UNIVERSIDAD EUROPEA DEL ATLÁNTICO",
+                    name: "Fundación Universitaria Iberoamericana (FUNIBER)",
                     logoUrl: "logo_funiber.jpeg"
                 },
                 roles: [
@@ -267,35 +242,32 @@ export const eslocal: IPosibleLocals = {
                             `
                             <ul>
                                 <li>
-                                    Análisis y Desarrollo de componentes web y SPA en reactjs y vuejs.
+                                  Análisis y Desarrollo de componentes en reactjs y vuejs.
                                 </li>
                                 <li>
-                                    Análisis, Diseño y desarrollo de APIs REST con Node.js.
+                                  Análisis, Diseño y desarrollo de APIs REST con Node.js, expressjs y Cloud Functions. 
                                 </li>
                                 <li>
-                                    Diseño de arquitectura de proyectos web y microservicios cloud native.
+                                  Diseño de arquitectura de proyectos web y microservicios cloud native.
                                 </li>
                                 <li>
                                     Automatización de tareas.
                                 </li>
                                 <li>
-                                    Contenerización de aplicación y entornos de desarrollo con Docker y Docker Compose.
+                                  Contenerización de aplicación y entornos de desarrollo con Docker y Docker Compose.
                                 </li>
                             </ul>
                         `,
-                        period: ["December 1, 2019", "now"], // from december to nowadays
+                        period: ["December 1, 2019", "July 31, 2022"], // from december to nowadays
                         role: "Desarrollador Web",
-                        technologies: ["Reactjs", "Typescript", "Vuejs", "AWS", "Nuxt", "Docker", "GCP"]
+                        technologies: ["Reactjs", "Typescript", "Vuejs", "AWS", "Express", "Docker", "GCP"]
                     },
                     {
                         description:
                             `
                             <ul>
                                 <li>
-                                    Maquetación de elementos y paginas Web a
-                                    partir de prototipos, aplicación de estilos
-                                    responsivos e interactividad.
-                                </li>
+Maquetación de elementos y paginas Web a partir de prototipos, aplicación de estilos responsivos e interactividad.                                </li>
                             </ul>
                         `,
                         period: ["September 1, 2018", "November 30, 2019"],

@@ -235,6 +235,37 @@ I work with autonomy and adaptation to change, I am looking for new challenges w
         places: [
             {
                 place: {
+                    name: "Sopra Steria",
+                    logoUrl: "logo_soprasteria.jpeg"
+                },
+                roles: [
+                    {
+                        description:
+                            `
+                            <ul>
+                                <li>
+ Development of new modules and maintenance in apps with React, Typescript, Redux, ChakraUI.
+                                </li>
+                                <li>
+         Maintenance and new functionalities and components for UI component library with React and Storybook based on ChakraUI.
+                                </li>
+                                <li>
+Testing with react-testing-library and Mock Service Worker
+
+                                </li>
+                                <li>
+ Code review and new features estimations
+
+                                </li>
+                            </ul>`,
+                        period: ["April 1, 2023", "now"], // from december to nowadays
+                        role: "Senior Frontend Developer Analyst",
+                        technologies: ["React", "Typescript", "Redux", "react-query", "Jest", "Docker"]
+                    }
+                ]
+            },
+            {
+                place: {
                     name: "Iberoamerican University Foundation (FUNIBER)",
                     logoUrl: "logo_funiber.jpeg"
                 },

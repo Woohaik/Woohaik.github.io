@@ -238,6 +238,35 @@ Je travaille avec autonomie et adaptation au changement, je suis à la recherche
     resumeView: {
         title: "<span class='text-primary dark:text-lightText'> Mon</span> Expérience",
         places: [
+
+            {
+                place: {
+                    name: "Sopra Steria",
+                    logoUrl: "logo_soprasteria.jpeg"
+                },
+                roles: [
+                    {
+                        description:
+                            `
+                            <ul>
+                                <li>
+                                   Développement de nouveaux modules et maintenance dans les applications avec React, Typescript, Redux et ChakraUI.
+                                </li>
+                                <li>
+                                   Maintenance et nouvelles fonctionnalités pour la bibliothèque de composants UI avec React et Storybook basé sur ChakraUI.                                </li>
+                                <li>
+                                   Tests avec react-testing-library et Mock Service Worker
+                                </li>
+                                <li>
+                                   Revue de code, estimation des nouvelles fonctionnalités
+                                </li>
+                            </ul>`,
+                        period: ["April 1, 2023", "now"], // from december to nowadays
+                        role: "Senior Frontend Developer Analyst",
+                        technologies: ["React", "Typescript", "Redux", "react-query", "Jest", "Docker"]
+                    }
+                ]
+            },
             {
                 place: {
                     name: "Fondation universitaire ibéroaméricaine (FUNIBER)",

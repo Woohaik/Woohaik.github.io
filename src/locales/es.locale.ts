@@ -231,6 +231,36 @@ export const eslocal: IPosibleLocals = {
     resumeView: {
         title: "<span class='text-primary dark:text-lightText'> Mi</span> Experiencia",
         places: [
+
+            {
+                place: {
+                    name: "Sopra Steria",
+                    logoUrl: "logo_soprasteria.jpeg"
+                },
+                roles: [
+                    {
+                        description:
+                            `
+                            <ul>
+                                <li>
+                                  Desarrollo de nuevos modulos y mantenimiento en apps React, Typescript, Redux con ChakraUI.
+                                </li>
+                                <li>
+                                Mantenimiento y nuevas funcionalidades y componentes en librería ui de componentes con React y Storybook basada en ChakraUI.
+                                </li>
+                                <li>
+                                Testing con react-testing-library y Mock Service Worker.
+                                </li>
+                                <li>
+                                Revisión de código y estimación de evolutivos.
+                                </li>
+                            </ul>`,
+                        period: ["April 1, 2023", "now"], // from december to nowadays
+                        role: "Senior Frontend Developer Analyst",
+                        technologies: ["React", "Typescript", "Redux", "react-query", "Jest", "Docker"]
+                    }
+                ]
+            },
             {
                 place: {
                     name: "Fundación Universitaria Iberoamericana (FUNIBER)",

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3b803ec.css",
-    "main.js": "/static/js/main.2d544144.js",
+    "main.css": "/static/css/main.3a4e80b1.css",
+    "main.js": "/static/js/main.dd6d2555.js",
     "static/media/vscode-rickroll.gif": "/static/media/vscode-rickroll.967fa87d888dc62ae2c7.gif",
     "static/media/card-memory-game.webp": "/static/media/card-memory-game.80ad73e14dddc6438acf.webp",
     "static/media/tabla-nutricional.webp": "/static/media/tabla-nutricional.2b87eeb8aa2834840b3b.webp",
@@ -9,17 +9,18 @@
     "static/media/supra-kat.webp": "/static/media/supra-kat.52f06bbd66fb01e8ee21.webp",
     "static/media/residencia-clone.webp": "/static/media/residencia-clone.89f54da0cff3fccaba23.webp",
     "static/media/portafolio.webp": "/static/media/portafolio.a06540590219e398b780.webp",
+    "static/media/logo_soprasteria.jpeg": "/static/media/logo_soprasteria.90f0fd9e30a98195c19c.jpeg",
     "static/media/me.webp": "/static/media/me.d38f3a5d2c29d0f53776.webp",
     "static/media/logo_uneatlantico.svg": "/static/media/logo_uneatlantico.88bdc92573ed3a3b742f6dd0e19f5001.svg",
     "static/media/sort-algo-visualizer.webp": "/static/media/sort-algo-visualizer.c26d8bd94cd209851d2d.webp",
     "index.html": "/index.html",
     "static/media/npm-logo.svg": "/static/media/npm-logo.f50030880b3a655fe565.svg",
     "static/media/npm-logo.webp": "/static/media/npm-logo.ef72fb3c73a1afd90db5.webp",
-    "main.e3b803ec.css.map": "/static/css/main.e3b803ec.css.map",
-    "main.2d544144.js.map": "/static/js/main.2d544144.js.map"
+    "main.3a4e80b1.css.map": "/static/css/main.3a4e80b1.css.map",
+    "main.dd6d2555.js.map": "/static/js/main.dd6d2555.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3b803ec.css",
-    "static/js/main.2d544144.js"
+    "static/css/main.3a4e80b1.css",
+    "static/js/main.dd6d2555.js"
   ]
 }

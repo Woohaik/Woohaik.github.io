@@ -6,23 +6,22 @@ import CardSubTitle from "components/Card/CardSubTitle";
 import CardTitle from "components/Card/CardTitle";
 import CertificationCard from "components/CertificationCard";
 import { MY_CERTIFICATIONS, MY_EMAIL, MY_PHONE_NUMBER, POSIBLE_LOCALS } from "utils/constants";
-import { capitalizeText } from "utils/functions";
 import logoUneat from "assets/logo_uneatlantico.svg";
 import { FaGlobe, FaUserGraduate, FaCertificate, FaAddressBook } from "react-icons/fa";
 import LanguageLevel from "components/LanguageLevel";
 import { FR, ES, GB } from "country-flag-icons/react/3x2";
 import ColorSquare from "components/ColorSquare";
+import { displayDateRangeText } from "./utils";
+import { UNIVERSITY_DATE_RANGE } from "./contants";
 
 const AboutView = () => {
     const { t } = useTranslation("translation", { keyPrefix: "aboutView" });
     const { t: baseT } = useTranslation();
     const { t: aboutAnswersT } = useTranslation("translation", { keyPrefix: "aboutView.aboutAnswers" });
 
-    const universityRange: string = useMemo(() => {
-        const startedUniversity = capitalizeText((new Date("September 1, 2018").toLocaleDateString(baseT(POSIBLE_LOCALS.locale), { year: "numeric", month: "long" })));
-        const finisheDUniversity = capitalizeText(new Date("June 1, 2022").toLocaleDateString(baseT(POSIBLE_LOCALS.locale), { year: "numeric", month: "long" }));
-        return `${startedUniversity} - ${finisheDUniversity}`;
-    }, [baseT(POSIBLE_LOCALS.locale)]);
+    const universityRange: string = useMemo(() => displayDateRangeText(UNIVERSITY_DATE_RANGE), [baseT(POSIBLE_LOCALS.locale)]);
+
+    const colorSquareKeys = Object.keys(POSIBLE_LOCALS.aboutView.aboutAnswers) as (keyof typeof POSIBLE_LOCALS.aboutView.aboutAnswers)[];
 
     return (
         <Card>
@@ -31,26 +30,13 @@ const AboutView = () => {
                 <div className="flex gap-4 mb-3 lg:flex-row sm:flex-col flex-col ">
                     <div className="flex-1 text-justify" dangerouslySetInnerHTML={{ __html: t(POSIBLE_LOCALS.aboutView.description) }} />
                     <div style={{ flex: "0 1 250px" }}>
-                        <ColorSquare
-                            text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.degree)}
-                            title={t(POSIBLE_LOCALS.aboutView.degree)}
-                        />
-                        <ColorSquare
-                            text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.residence)}
-                            title={t(POSIBLE_LOCALS.aboutView.residence)}
-                        />
-                        <ColorSquare
-                            title={t(POSIBLE_LOCALS.aboutView.nationality)}
-                            text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.nationality)}
-                        />
-                        <ColorSquare
-                            title={t(POSIBLE_LOCALS.aboutView.movility)}
-                            text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.movility)}
-                        />
-                        <ColorSquare
-                            title={t(POSIBLE_LOCALS.aboutView.coffee)}
-                            text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers.coffee)}
-                        />
+                        {
+                            colorSquareKeys.map(key => <ColorSquare
+                                key={key}
+                                text={aboutAnswersT(POSIBLE_LOCALS.aboutView.aboutAnswers[key])}
+                                title={t(POSIBLE_LOCALS.aboutView[key])}
+                            />)
+                        }
                     </div>
                 </div>
                 <CardSubTitle icon={<FaCertificate />} html={t(POSIBLE_LOCALS.aboutView.certificationSubTitle)} />

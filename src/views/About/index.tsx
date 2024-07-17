@@ -9,7 +9,7 @@ import { MY_CERTIFICATIONS, MY_EMAIL, MY_PHONE_NUMBER, POSIBLE_LOCALS } from "ut
 import logoUneat from "assets/logo_uneatlantico.svg";
 import { FaGlobe, FaUserGraduate, FaCertificate, FaAddressBook } from "react-icons/fa";
 import LanguageLevel from "components/LanguageLevel";
-import { FR, ES, GB } from "country-flag-icons/react/3x2";
+import { FR, ES, GB, JP } from "country-flag-icons/react/3x2";
 import ColorSquare from "components/ColorSquare";
 import { displayDateRangeText } from "./utils";
 import { UNIVERSITY_DATE_RANGE } from "./contants";
@@ -68,7 +68,8 @@ const AboutView = () => {
                         <div className="flex flex-col pt-2 pb-4 gap-5">
                             <LanguageLevel flag={ES} level={9} />
                             <LanguageLevel flag={GB} level={6} />
-                            <LanguageLevel flag={FR} level={3} />
+                            <LanguageLevel flag={FR} level={4} />
+                            <LanguageLevel flag={JP} level={2} />
                         </div>
                     </div>
 
